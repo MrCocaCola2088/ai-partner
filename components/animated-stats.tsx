@@ -5,6 +5,9 @@ import {useEffect, useMemo, useRef, useState} from 'react';
 import {useTranslations} from 'next-intl';
 import {Card, CardContent} from '@/components/ui/card';
 
+const COUNT_UP_DURATION_MS = 900;
+const COUNT_UP_INTERVAL_MS = 16;
+
 function StatCard({
   target,
   suffix,
@@ -23,9 +26,7 @@ function StatCard({
   useEffect(() => {
     if (!inView) return;
     let start = 0;
-    const duration = 900;
-    const step = 16;
-    const increment = target / (duration / step);
+    const increment = target / (COUNT_UP_DURATION_MS / COUNT_UP_INTERVAL_MS);
     const timer = window.setInterval(() => {
       start += increment;
       if (start >= target) {
@@ -34,7 +35,7 @@ function StatCard({
       } else {
         setValue(Math.round(start));
       }
-    }, step);
+    }, COUNT_UP_INTERVAL_MS);
     return () => window.clearInterval(timer);
   }, [inView, target]);
 

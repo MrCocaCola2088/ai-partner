@@ -1,12 +1,14 @@
 'use client';
 
 import {MoonStar, SunMedium} from 'lucide-react';
+import {useTranslations} from 'next-intl';
 import {useTheme} from 'next-themes';
 import {useEffect, useState} from 'react';
 import {Button} from '@/components/ui/button';
 
 export function ThemeToggle() {
   const {resolvedTheme, setTheme} = useTheme();
+  const t = useTranslations('Accessibility');
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
@@ -19,7 +21,7 @@ export function ThemeToggle() {
 
   return (
     <Button
-      aria-label={isDark ? 'Cambiar a modo claro' : 'Switch to dark mode'}
+      aria-label={isDark ? t('switchToLight') : t('switchToDark')}
       size="icon"
       variant="secondary"
       onClick={() => setTheme(isDark ? 'light' : 'dark')}

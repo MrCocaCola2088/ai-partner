@@ -46,7 +46,7 @@ export function TestimonialCarousel() {
             <button
               key={index}
               type="button"
-              aria-label={`Slide ${index + 1}`}
+              aria-label={t('slideLabel', {index: index + 1})}
               className={`h-2 w-10 rounded-full ${active === index ? 'bg-cyan-300' : 'bg-white/15'}`}
               onClick={() => setActive(index)}
             />

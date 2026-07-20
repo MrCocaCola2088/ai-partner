@@ -13,7 +13,8 @@
     "about": "About",
     "contact": "Contact",
     "pricing": "Pricing",
-    "cta": "Request a Free AI Assessment"
+    "cta": "Request a Free AI Assessment",
+    "toggleMenu": "Open or close menu"
   },
   "Hero": {
     "badge": "AI implementation partner",
@@ -190,6 +191,7 @@
   "Testimonials": {
     "eyebrow": "Testimonials",
     "title": "Premium placeholders ready for future proof points and success stories.",
+    "slideLabel": "Testimonial {index}",
     "items": [
       {"quote": "We moved from scattered manual work to a sales process supported by AI-driven follow-up, documentation and response support.", "name": "CEO · Service company", "role": "Santa Cruz de la Sierra"},
       {"quote": "The training helped us standardize how we use ChatGPT and Claude without improvising or losing quality.", "name": "Operations Director", "role": "Growing SMB"},
@@ -268,5 +270,9 @@
   },
   "LiveChat": {
     "label": "Live chat · Coming soon"
+  },
+  "Accessibility": {
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode"
   }
 }

@@ -23,7 +23,7 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
     '@type': 'ProfessionalService',
     name: 'AI Partner',
     description: t('Metadata.description'),
-    areaServed: ['Santa Cruz de la Sierra', 'LatAm', 'United States'],
+    areaServed: ['Santa Cruz de la Sierra', 'Latin America', 'United States'],
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Santa Cruz de la Sierra',

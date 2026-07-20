@@ -13,7 +13,8 @@
     "about": "Nosotros",
     "contact": "Contacto",
     "pricing": "Planes",
-    "cta": "Solicita un Diagnóstico Gratuito"
+    "cta": "Solicita un Diagnóstico Gratuito",
+    "toggleMenu": "Abrir o cerrar menú"
   },
   "Hero": {
     "badge": "Partner de implementación de IA",
@@ -190,6 +191,7 @@
   "Testimonials": {
     "eyebrow": "Testimonios",
     "title": "Placeholder premium para casos de éxito y transformación operativa.",
+    "slideLabel": "Testimonio {index}",
     "items": [
       {"quote": "Pasamos de tareas manuales dispersas a un proceso comercial con seguimiento, documentación y respuestas asistidas por IA.", "name": "CEO · Empresa de servicios", "role": "Santa Cruz de la Sierra"},
       {"quote": "La capacitación nos permitió estandarizar el uso de ChatGPT y Claude sin improvisar ni perder calidad.", "name": "Directora de Operaciones", "role": "PyME en crecimiento"},
@@ -268,5 +270,9 @@
   },
   "LiveChat": {
     "label": "Chat en vivo · Próximamente"
+  },
+  "Accessibility": {
+    "switchToLight": "Cambiar a modo claro",
+    "switchToDark": "Cambiar a modo oscuro"
   }
 }
