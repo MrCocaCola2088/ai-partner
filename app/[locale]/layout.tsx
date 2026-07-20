@@ -22,7 +22,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const {locale} = await params;
   const t = await getTranslations({locale, namespace: 'Metadata'});
-  const canonical = locale === 'es' ? `/${locale}` : `/${locale}`;
+  const canonical = `/${locale}`;
 
   return {
     title: t('title'),

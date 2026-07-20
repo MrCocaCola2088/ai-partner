@@ -11,7 +11,7 @@ npm run dev
 
 ## Variables de entorno
 
-Copia `.env.example` a `.env.local` y ajusta los valores según tu despliegue.
+Copia `.env.example` a `.env.local` para desarrollo web y a `.env` si usarás Docker Compose. `NEXT_PUBLIC_BOB_EXCHANGE_RATE` parte de una referencia inicial de 6.96 BOB/USD y debe ajustarse según tu operación.
 
 ## Verificación
 

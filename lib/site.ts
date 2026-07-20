@@ -1,3 +1,5 @@
+const DEFAULT_BOB_EXCHANGE_RATE = 6.96;
+
 export const siteConfig = {
   name: 'AI Partner',
   defaultLocale: 'es',
@@ -10,7 +12,7 @@ export const siteConfig = {
     'https://forms.office.com/r/WjYk0T7Kt5',
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.com',
   city: 'Santa Cruz de la Sierra, Bolivia',
-  exchangeRate: Number(process.env.NEXT_PUBLIC_BOB_EXCHANGE_RATE ?? '6.96'),
+  exchangeRate: Number(process.env.NEXT_PUBLIC_BOB_EXCHANGE_RATE ?? String(DEFAULT_BOB_EXCHANGE_RATE)),
 };
 
 export function getLocalizedPath(locale: string, path = '') {
