@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "/precios",
+    "/diagnostico",
+    "/agente-ia-whatsapp",
+    "/ia-para-clinicas",
+    "/ia-para-inmobiliarias",
+    "/automatizacion-de-procesos",
+    "/capacitacion-ia-empresas",
+    "/qa-testing-ia",
+    "/blog",
+    "/tecnologias"
+  ],
+  "blogSlugs": [
+    "ia-pymes-latinoamerica",
+    "chatgpt-vs-claude",
+    "automatizacion-5-casos",
+    "roi-ia-medir-impacto",
+    "cuanto-cuesta-chatbot-whatsapp-bolivia",
+    "clinica-dental-recordatorios-automaticos",
+    "whatsapp-business-vs-agente-ia",
+    "tareas-oficina-automatizar-n8n",
+    "evaluar-chatbot-qa-ia"
+  ]
+}

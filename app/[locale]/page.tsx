@@ -1,13 +1,24 @@
-import {ArrowRight, Bot, BrainCircuit, BriefcaseBusiness, ChartColumnIncreasing, CheckCircle2, ChevronRight, CircleGauge, Clock3, GraduationCap, LayoutDashboard, Mail, MapPin, NotebookTabs, Sparkles, Workflow} from 'lucide-react';
-import {getTranslations} from 'next-intl/server';
+import {ArrowRight, Bot, BrainCircuit, BriefcaseBusiness, ChartColumnIncreasing, CheckCircle2, ChevronRight, CircleGauge, Clock3, GraduationCap, LayoutDashboard, Mail, MapPin, NotebookTabs, Phone, Sparkles, Workflow} from 'lucide-react';
+import type {Metadata} from 'next';
+import {getTranslations, setRequestLocale} from 'next-intl/server';
 import {AnimatedStats} from '@/components/animated-stats';
+import {FaqList} from '@/components/faq-list';
 import {OpportunityScore} from '@/components/opportunity-score';
 import {RoiCalculator} from '@/components/roi-calculator';
 import {TestimonialCarousel} from '@/components/testimonial-carousel';
 import {Badge} from '@/components/ui/badge';
 import {Button} from '@/components/ui/button';
 import {Card, CardContent} from '@/components/ui/card';
+import {Link} from '@/i18n/navigation';
+import {blogPosts} from '@/lib/blog-posts';
+import {pageMetadata, routeSeo} from '@/lib/seo';
 import {siteConfig} from '@/lib/site';
+
+export async function generateMetadata({params}: {params: Promise<{locale: string}>}): Promise<Metadata> {
+  const {locale} = await params;
+  const copy = locale === 'en' ? routeSeo.home.en : routeSeo.home.es;
+  return pageMetadata(locale, '/', copy);
+}
 
 const problemIcons = [Clock3, Mail, NotebookTabs, Workflow, BriefcaseBusiness, LayoutDashboard];
 const solutionIcons = [BrainCircuit, Workflow, GraduationCap, Bot, Sparkles, CircleGauge];
@@ -17,23 +28,23 @@ const portalIcons = [LayoutDashboard, NotebookTabs, Sparkles, Workflow, CheckCir
 
 export default async function HomePage({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({locale});
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'ProfessionalService',
-    name: 'AI Partner',
-    description: t('Metadata.description'),
-    areaServed: ['Santa Cruz de la Sierra', 'Latin America', 'United States'],
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: 'Santa Cruz de la Sierra',
-      addressCountry: 'BO',
-    },
-    sameAs: [siteConfig.bookingUrl, siteConfig.assessmentUrl],
-  };
+  const faqItems = [0, 1, 2, 3].map((index) => ({
+    question: t(`Faq.items.${index}.question`),
+    answer: t(`Faq.items.${index}.answer`),
+  }));
+  const featuredPosts = blogPosts.slice(0, 3);
+  const lang = locale === 'en' ? 'en' : 'es';
 
   return (
     <main>
+      {locale !== 'en' && (
+        <>
+          <link rel="canonical" href="https://ai-partner.website/" />
+          <meta property="og:url" content="https://ai-partner.website/" />
+        </>
+      )}
       <section className="mx-auto max-w-7xl px-4 pb-20 pt-14 sm:px-6 lg:px-8 lg:pb-28 lg:pt-20">
         <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
@@ -46,9 +57,9 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button size="lg" asChild>
-                <a href={siteConfig.assessmentUrl} target="_blank" rel="noreferrer">
+                <Link href="/diagnostico">
                   {t('Hero.primaryCta')} <ArrowRight className="size-4" />
-                </a>
+                </Link>
               </Button>
               <Button size="lg" variant="secondary" asChild>
                 <a href="#process">{t('Hero.secondaryCta')}</a>
@@ -224,10 +235,10 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
             </div>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Button asChild>
-                <a href={siteConfig.assessmentUrl} target="_blank" rel="noreferrer">{t('PricingTeaser.primaryCta')}</a>
+                <Link href="/diagnostico">{t('PricingTeaser.primaryCta')}</Link>
               </Button>
               <Button variant="secondary" asChild>
-                <a href={`/${locale}/pricing`}>{t('PricingTeaser.secondaryCta')}</a>
+                <Link href="/precios">{t('PricingTeaser.secondaryCta')}</Link>
               </Button>
             </div>
           </CardContent>
@@ -312,9 +323,7 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
               <p className="text-sm leading-7 text-slate-300">{t('Assessment.note')}</p>
               <div className="flex flex-col gap-3 sm:flex-row">
                 <Button asChild>
-                  <a href={siteConfig.assessmentUrl} target="_blank" rel="noreferrer">
-                    {t('Assessment.primaryCta')}
-                  </a>
+                  <Link href="/diagnostico">{t('Assessment.primaryCta')}</Link>
                 </Button>
                 <Button variant="secondary" asChild>
                   <a href={siteConfig.bookingUrl} target="_blank" rel="noreferrer">
@@ -343,16 +352,7 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
             <Badge>{t('Faq.eyebrow')}</Badge>
             <h2 className="mt-4 text-3xl font-semibold text-slate-950 dark:text-white md:text-4xl">{t('Faq.title')}</h2>
           </div>
-          <div className="space-y-4">
-            {[0, 1, 2, 3].map((index) => (
-              <details key={index} className="rounded-3xl border border-white/10 bg-white/8 p-6 backdrop-blur dark:bg-white/6">
-                <summary className="cursor-pointer list-none text-lg font-semibold text-slate-950 dark:text-white">
-                  {t(`Faq.items.${index}.question`)}
-                </summary>
-                <p className="mt-4 text-sm leading-7 text-slate-600 dark:text-slate-300">{t(`Faq.items.${index}.answer`)}</p>
-              </details>
-            ))}
-          </div>
+          <FaqList items={faqItems} />
         </div>
       </section>
 
@@ -371,12 +371,16 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
           </div>
         </div>
         <div className="mt-10 grid gap-4 lg:grid-cols-3">
-          {[0, 1, 2].map((index) => (
-            <Card key={index}>
+          {featuredPosts.map((post) => (
+            <Card key={post.slug}>
               <CardContent className="space-y-4">
-                <p className="text-sm uppercase tracking-[0.2em] text-cyan-200">{t(`Blog.posts.${index}.category`)}</p>
-                <h3 className="text-xl font-semibold text-slate-950 dark:text-white">{t(`Blog.posts.${index}.title`)}</h3>
-                <p className="text-sm leading-7 text-slate-600 dark:text-slate-300">{t(`Blog.posts.${index}.excerpt`)}</p>
+                <p className="text-sm uppercase tracking-[0.2em] text-cyan-200">{post.category[lang]}</p>
+                <h3 className="text-xl font-semibold text-slate-950 dark:text-white">
+                  <Link href={`/blog/${post.slug}`} className="hover:text-cyan-200">
+                    {post.title[lang]}
+                  </Link>
+                </h3>
+                <p className="text-sm leading-7 text-slate-600 dark:text-slate-300">{post.description[lang]}</p>
               </CardContent>
             </Card>
           ))}
@@ -414,11 +418,18 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
               <p className="text-lg leading-8 text-slate-600 dark:text-slate-300">{t('Contact.description')}</p>
               <div className="space-y-3 text-sm text-slate-600 dark:text-slate-300">
                 <p className="flex items-center gap-2"><MapPin className="size-4 text-cyan-300" /> {siteConfig.city}</p>
-                <p className="flex items-center gap-2"><Mail className="size-4 text-cyan-300" /> {t('Contact.emailPlaceholder')}</p>
+                <p className="flex items-center gap-2">
+                  <Mail className="size-4 text-cyan-300" />
+                  <a className="hover:text-white" href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
+                </p>
+                <p className="flex items-center gap-2">
+                  <Phone className="size-4 text-cyan-300" />
+                  <a className="hover:text-white" href={siteConfig.whatsappUrl}>{siteConfig.phoneDisplay}</a>
+                </p>
               </div>
               <div className="flex flex-col gap-3 sm:flex-row">
                 <Button asChild>
-                  <a href={siteConfig.assessmentUrl} target="_blank" rel="noreferrer">{t('Contact.primaryCta')}</a>
+                  <Link href="/diagnostico">{t('Contact.primaryCta')}</Link>
                 </Button>
                 <Button variant="secondary" asChild>
                   <a href={siteConfig.bookingUrl} target="_blank" rel="noreferrer">{t('Contact.secondaryCta')}</a>
@@ -440,10 +451,6 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
         </div>
       </section>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}
-      />
     </main>
   );
 }

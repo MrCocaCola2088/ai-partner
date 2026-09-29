@@ -13,6 +13,7 @@
     "about": "About",
     "contact": "Contact",
     "pricing": "Pricing",
+    "technologies": "Technologies",
     "cta": "Request a Free AI Assessment",
     "toggleMenu": "Open or close menu"
   },
@@ -249,9 +250,9 @@
     "approx": "Approximate equivalent in Bolivianos:",
     "cta": "Request a Free AI Assessment",
     "plans": [
-      {"name": "Starter Plan", "description": "Ideal for founders and small businesses starting their first AI workflows."},
-      {"name": "Professional Plan", "description": "Ideal for growing companies that need to automate more areas and train the team."},
-      {"name": "Enterprise Plan", "description": "For organizations transforming multiple departments with AI and higher operational complexity."}
+      {"name": "Starter", "description": "For founders and small businesses starting their first AI workflows. USD 250 per month."},
+      {"name": "Professional", "description": "For growing companies that need to automate more areas and train the team. USD 500 per month."},
+      {"name": "Business", "description": "For organizations transforming multiple departments with AI and higher operational complexity. USD 900 per month."}
     ]
   },
   "Footer": {
@@ -259,6 +260,10 @@
     "navigation": "Navigation",
     "home": "Home",
     "pricing": "Pricing",
+    "technologies": "Technologies",
+    "blog": "Blog",
+    "diagnosis": "Assessment",
+    "solutions": "Solutions",
     "contact": "Contact",
     "ctaTitle": "Next step",
     "assessment": "Request a Free AI Assessment",
