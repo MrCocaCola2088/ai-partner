@@ -77,7 +77,7 @@
     "eyebrow": "Plans and prices",
     "title": "One monthly subscription. Implementation included.",
     "description": "Three plans with a fixed price. Implementation and setup are included in all three.",
-    "perMonth": "/ month",
+    "perMonth": "/month",
     "note": "Prices are US dollars for reference. They are billed in bolivianos at the day’s exchange rate. You can move up or down a plan whenever you want.",
     "included": "Included",
     "yes": "Included",

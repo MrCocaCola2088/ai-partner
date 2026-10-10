@@ -77,7 +77,7 @@
     "eyebrow": "Planes y precios",
     "title": "Una suscripción mensual. Implementación incluida.",
     "description": "Tres planes con precio fijo. La implementación y la configuración están incluidas en los tres.",
-    "perMonth": "/ mes",
+    "perMonth": "/mes",
     "note": "Precios en dólares de referencia. Se facturan en bolivianos al tipo de cambio del día. Podés subir o bajar de plan cuando quieras.",
     "included": "Incluida",
     "yes": "Incluido",
