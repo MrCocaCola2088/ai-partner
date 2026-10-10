@@ -24,7 +24,7 @@ export default function NotFound() {
           </Button>
           <Button variant="secondary" asChild>
             {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-            <a href="/precios">Ver planes y precios</a>
+            <a href="/precios/">Ver planes y precios</a>
           </Button>
         </div>
       </div>

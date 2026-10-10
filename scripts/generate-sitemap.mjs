@@ -25,10 +25,15 @@ const esPages = [
   ...blogSlugs.map((slug) => [`/blog/${slug}`, '0.6']),
 ];
 
+function publicPath(path) {
+  if (path === '/') return '/';
+  return path.endsWith('/') ? path : `${path}/`;
+}
+
 const urls = esPages.flatMap(([path, priority]) => {
-  const english = path === '/' ? '/en' : `/en${path}`;
+  const english = path === '/' ? '/en/' : `/en${publicPath(path)}`;
   return [
-    {loc: `${site}${path === '/' ? '/' : path}`, priority},
+    {loc: `${site}${publicPath(path)}`, priority},
     {loc: `${site}${english}`, priority: '0.4'},
   ];
 });
