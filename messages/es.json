@@ -13,6 +13,7 @@
     "about": "Nosotros",
     "contact": "Contacto",
     "pricing": "Planes",
+    "technologies": "Tecnologías",
     "cta": "Solicita un Diagnóstico Gratuito",
     "toggleMenu": "Abrir o cerrar menú"
   },
@@ -243,22 +244,26 @@
     "metaTitle": "Planes de AI Partner",
     "metaDescription": "Conoce nuestros planes de implementación de IA para emprendedores, empresas en crecimiento y organizaciones con mayor complejidad operativa.",
     "eyebrow": "Página de precios",
-    "title": "Planes claros para empezar con IA sin perder foco en el retorno.",
+    "title": "Precios de consultoría en IA: desde USD 250/mes",
     "description": "Todos los planes se adaptan durante el diagnóstico gratuito según tu operación, equipo, prioridades y velocidad deseada de implementación.",
     "popular": "Más Popular",
     "approx": "Aprox. equivalente en Bolivianos:",
     "cta": "Solicitar Diagnóstico Gratuito",
     "plans": [
-      {"name": "Plan Emprendedor", "description": "Ideal para emprendedores y pequeñas empresas que quieren estructurar sus primeros workflows con IA."},
-      {"name": "Plan Profesional", "description": "Ideal para empresas en crecimiento que necesitan automatizar más áreas y capacitar a su equipo."},
-      {"name": "Plan Empresarial", "description": "Para organizaciones que desean transformar múltiples áreas con IA y una operación más compleja."}
+      {"name": "Emprendedor", "description": "Ideal para emprendedores y pequeñas empresas que quieren estructurar sus primeros workflows con IA. USD 250 al mes."},
+      {"name": "Profesional", "description": "Ideal para empresas en crecimiento que necesitan automatizar más áreas y capacitar a su equipo. USD 500 al mes."},
+      {"name": "Empresarial", "description": "Para organizaciones que desean transformar múltiples áreas con IA y una operación más compleja. USD 900 al mes."}
     ]
   },
   "Footer": {
     "description": "Implementación de IA para empresas que buscan ahorrar tiempo, reducir costos y aumentar productividad con una ejecución práctica.",
     "navigation": "Navegación",
     "home": "Inicio",
-    "pricing": "Planes",
+    "pricing": "Precios",
+    "technologies": "Tecnologías",
+    "blog": "Blog",
+    "diagnosis": "Diagnóstico",
+    "solutions": "Soluciones",
     "contact": "Contacto",
     "ctaTitle": "Próximo paso",
     "assessment": "Solicitar Diagnóstico Gratuito",

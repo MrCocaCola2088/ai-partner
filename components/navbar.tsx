@@ -7,10 +7,9 @@ import {LocaleSwitcher} from '@/components/locale-switcher';
 import {ThemeToggle} from '@/components/theme-toggle';
 import {Button} from '@/components/ui/button';
 import {Link} from '@/i18n/navigation';
-import {siteConfig} from '@/lib/site';
 import {cn} from '@/lib/utils';
 
-const sectionIds = ['services', 'process', 'cases', 'blog', 'about', 'contact'] as const;
+const sectionIds = ['services', 'process', 'cases', 'about', 'contact'] as const;
 
 export function Navbar() {
   const t = useTranslations('Nav');
@@ -39,19 +38,25 @@ export function Navbar() {
           AI Partner
         </Link>
         <nav className="hidden items-center gap-6 lg:flex">
-          <a className="text-sm text-slate-300 transition hover:text-white" href={`/${locale}`}>
+          <Link className="text-sm text-slate-300 transition hover:text-white" href="/">
             {t('home')}
-          </a>
+          </Link>
           {sectionIds.map((id) => (
             <a
               key={id}
               className="text-sm text-slate-300 transition hover:text-white"
-              href={`/${locale}/#${id}`}
+              href={`${locale === 'es' ? '' : '/en'}/#${id}`}
             >
               {t(id)}
             </a>
           ))}
-          <Link href="/pricing" className="text-sm text-slate-300 transition hover:text-white">
+          <Link href="/tecnologias" className="text-sm text-slate-300 transition hover:text-white">
+            {t('technologies')}
+          </Link>
+          <Link href="/blog" className="text-sm text-slate-300 transition hover:text-white">
+            {t('blog')}
+          </Link>
+          <Link href="/precios" className="text-sm text-slate-300 transition hover:text-white">
             {t('pricing')}
           </Link>
         </nav>
@@ -59,9 +64,7 @@ export function Navbar() {
           <LocaleSwitcher />
           <ThemeToggle />
           <Button asChild>
-            <a href={siteConfig.assessmentUrl} target="_blank" rel="noreferrer">
-              {t('cta')}
-            </a>
+            <Link href="/diagnostico">{t('cta')}</Link>
           </Button>
         </div>
         <button
@@ -76,20 +79,26 @@ export function Navbar() {
       {open && (
         <div className="border-t border-white/10 bg-slate-950/95 px-4 py-4 backdrop-blur lg:hidden">
           <div className="flex flex-col gap-4">
-            <a href={`/${locale}`} onClick={() => setOpen(false)} className="text-sm text-slate-200">
+            <Link href="/" onClick={() => setOpen(false)} className="text-sm text-slate-200">
               {t('home')}
-            </a>
+            </Link>
             {sectionIds.map((id) => (
               <a
                 key={id}
-                href={`/${locale}/#${id}`}
+                href={`${locale === 'es' ? '' : '/en'}/#${id}`}
                 className="text-sm text-slate-200"
                 onClick={() => setOpen(false)}
               >
                 {t(id)}
               </a>
             ))}
-            <Link href="/pricing" className="text-sm text-slate-200" onClick={() => setOpen(false)}>
+            <Link href="/tecnologias" className="text-sm text-slate-200" onClick={() => setOpen(false)}>
+              {t('technologies')}
+            </Link>
+            <Link href="/blog" className="text-sm text-slate-200" onClick={() => setOpen(false)}>
+              {t('blog')}
+            </Link>
+            <Link href="/precios" className="text-sm text-slate-200" onClick={() => setOpen(false)}>
               {t('pricing')}
             </Link>
             <div className="flex items-center justify-between pt-2">
@@ -97,9 +106,9 @@ export function Navbar() {
               <ThemeToggle />
             </div>
             <Button asChild>
-              <a href={siteConfig.assessmentUrl} target="_blank" rel="noreferrer">
+              <Link href="/diagnostico" onClick={() => setOpen(false)}>
                 {t('cta')}
-              </a>
+              </Link>
             </Button>
           </div>
         </div>

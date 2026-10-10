@@ -1,12 +1,9 @@
 'use client';
 
-import {motion, useInView} from 'framer-motion';
-import {useEffect, useMemo, useRef, useState} from 'react';
+import {motion} from 'framer-motion';
+import {useMemo} from 'react';
 import {useTranslations} from 'next-intl';
 import {Card, CardContent} from '@/components/ui/card';
-
-const COUNT_UP_DURATION_MS = 900;
-const COUNT_UP_INTERVAL_MS = 16;
 
 function StatCard({
   target,
@@ -19,26 +16,6 @@ function StatCard({
   label: string;
   delay: number;
 }) {
-  const ref = useRef<HTMLDivElement | null>(null);
-  const inView = useInView(ref, {once: true, margin: '-80px'});
-  const [value, setValue] = useState(0);
-
-  useEffect(() => {
-    if (!inView) return;
-    let start = 0;
-    const increment = target / (COUNT_UP_DURATION_MS / COUNT_UP_INTERVAL_MS);
-    const timer = window.setInterval(() => {
-      start += increment;
-      if (start >= target) {
-        setValue(target);
-        window.clearInterval(timer);
-      } else {
-        setValue(Math.round(start));
-      }
-    }, COUNT_UP_INTERVAL_MS);
-    return () => window.clearInterval(timer);
-  }, [inView, target]);
-
   return (
     <motion.div
       initial={{opacity: 0, y: 20}}
@@ -48,8 +25,8 @@ function StatCard({
     >
       <Card>
         <CardContent className="space-y-2">
-          <div ref={ref} className="text-4xl font-semibold text-white">
-            {value}
+          <div className="text-4xl font-semibold text-white">
+            {target}
             {suffix}
           </div>
           <p className="text-sm text-slate-300">{label}</p>
