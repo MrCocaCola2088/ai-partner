@@ -1,6 +1,6 @@
 # AI Partner
 
-Sitio bilingüe (ES/EN) construido con Next.js 15 para presentar servicios premium de implementación de IA y dirigir conversiones al diagnóstico gratuito y la reserva de llamadas.
+Sitio bilingüe (ES/EN) construido con Next.js 15 para presentar AI Partner como software de agentes de IA para pymes, por suscripción mensual, con implementación incluida.
 
 ## Desarrollo
 

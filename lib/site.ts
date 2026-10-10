@@ -11,8 +11,10 @@ export const siteConfig = {
   whatsappUrl: 'https://wa.me/59177056858',
   linkedinUrl: 'https://www.linkedin.com/in/eduardo-urzua/',
   instagramUrl: 'https://www.instagram.com/humanevolution2088/',
-  founderName: 'Eduardo Urzúa',
+  founderName: 'Eduardo Andrés Urzúa Udaeta',
   city: 'Santa Cruz de la Sierra, Bolivia',
+  nit: '5861862012',
+  legalLine: 'Empresa unipersonal · NIT 5861862012 · Santa Cruz, Bolivia',
   bookingUrl:
     process.env.NEXT_PUBLIC_BOOKING_URL ??
     'https://calclear.app/s/eduardourzua2088/llamada-de-descubrimiento',
@@ -46,6 +48,10 @@ export function getLocalizedPath(locale: string, path = '') {
     return normalized || '/';
   }
   return `/${locale}${normalized}`;
+}
+
+export function whatsappHref(message: string) {
+  return `${siteConfig.whatsappUrl}?text=${encodeURIComponent(message)}`;
 }
 
 export function formatCurrency(amount: number, currency: 'USD' | 'BOB', locale: string) {

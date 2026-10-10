@@ -5,6 +5,7 @@ import {BackToTop} from '@/components/back-to-top';
 import {CookieBanner} from '@/components/cookie-banner';
 import {LiveChatPlaceholder} from '@/components/live-chat-placeholder';
 import {Navbar} from '@/components/navbar';
+import {TopBar} from '@/components/top-bar';
 import {ThemeProvider} from '@/components/providers/theme-provider';
 import {SiteFooter} from '@/components/site-footer';
 import {routing} from '@/i18n/routing';
@@ -42,6 +43,7 @@ export default async function LocaleLayout({
         <div className="relative min-h-screen overflow-hidden">
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(59,130,246,0.15),_transparent_35%),radial-gradient(circle_at_bottom_left,_rgba(34,211,238,0.12),_transparent_30%)]" />
           <div className="relative">
+            <TopBar />
             <Navbar />
             {children}
             <SiteFooter />

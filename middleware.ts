@@ -41,10 +41,10 @@ const notFoundHtml = `<!DOCTYPE html>
   <main>
     <p style="letter-spacing:.3em;text-transform:uppercase;color:#a5f3fc;font-size:14px;">404</p>
     <h1 style="margin-top:16px;font-size:40px;color:#fff;">Página no encontrada</h1>
-    <p style="margin-top:16px;max-width:36rem;line-height:1.7;">Esa dirección no existe en AI Partner. Podés volver al inicio, ver los planes o pedir un diagnóstico gratuito.</p>
+    <p style="margin-top:16px;max-width:36rem;line-height:1.7;">Esa dirección no existe en AI Partner. Podés volver al inicio o ver los planes y precios.</p>
     <p style="margin-top:28px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
       <a href="/" style="background:#67e8f9;color:#020617;text-decoration:none;border-radius:999px;padding:12px 20px;font-weight:600;">Volver al inicio</a>
-      <a href="/diagnostico" style="border:1px solid rgba(255,255,255,.15);color:#fff;text-decoration:none;border-radius:999px;padding:12px 20px;">Diagnóstico gratuito</a>
+      <a href="/precios" style="border:1px solid rgba(255,255,255,.15);color:#fff;text-decoration:none;border-radius:999px;padding:12px 20px;">Ver planes y precios</a>
     </p>
   </main>
 </body>

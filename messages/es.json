@@ -1,273 +1,155 @@
 {
-  "Metadata": {
-    "title": "AI Partner | Implementación de IA para empresas en Bolivia",
-    "description": "Implementamos IA de forma práctica para ayudar a empresas a ahorrar tiempo, reducir costos y mejorar su productividad con consultoría, automatización y capacitación.",
-    "keywords": "IA, consultoría, automatización, ChatGPT, Claude, Bolivia, Santa Cruz, productividad"
-  },
   "Nav": {
     "home": "Inicio",
-    "services": "Servicios",
-    "process": "Cómo Funciona",
-    "cases": "Casos de Éxito",
-    "blog": "Blog",
-    "about": "Nosotros",
-    "contact": "Contacto",
+    "proceso": "Cómo funciona",
+    "agentes": "Agentes",
     "pricing": "Planes",
-    "technologies": "Tecnologías",
-    "cta": "Solicita un Diagnóstico Gratuito",
+    "preguntas": "Preguntas frecuentes",
+    "contacto": "Contacto",
+    "blog": "Blog",
+    "cta": "Quiero mi agente de WhatsApp",
     "toggleMenu": "Abrir o cerrar menú"
   },
-  "Hero": {
-    "badge": "Partner de implementación de IA",
-    "title": "Implementamos Inteligencia Artificial para que tu empresa trabaje más rápido, con menos esfuerzo y mejores resultados.",
-    "description": "Ayudamos a empresas a optimizar procesos, eliminar tareas repetitivas e integrar Inteligencia Artificial de forma práctica mediante consultoría personalizada, automatizaciones y capacitación.",
-    "primaryCta": "Solicita un Diagnóstico Gratuito",
-    "secondaryCta": "Conoce Nuestro Proceso",
-    "stats": {
-      "consulting": "Consultoría estratégica",
-      "consultingValue": "Diagnóstico orientado a ROI",
-      "implementation": "Implementación práctica",
-      "implementationValue": "Procesos reales + IA",
-      "support": "Acompañamiento continuo",
-      "supportValue": "Capacitación y soporte"
-    },
-    "panel": {
-      "title": "Panel ejecutivo",
-      "subtitle": "Oportunidades de IA priorizadas",
-      "items": [
-        {"title": "Ventas y seguimiento", "metric": "-32h/mes"},
-        {"title": "Reportes y documentación", "metric": "-54h/mes"},
-        {"title": "Atención y operaciones", "metric": "+38% eficiencia"}
-      ],
-      "footer": "Diseñamos automatizaciones, capacitación y workflows para generar valor medible desde las primeras semanas."
-    }
+  "TopBar": {
+    "text": "Probá cómo responde un agente de IA en WhatsApp.",
+    "cta": "Ver demo por WhatsApp"
   },
-  "TrustedBy": {
-    "title": "Diseñado para equipos que buscan crecer con procesos premium",
-    "items": ["Retail", "Salud", "Servicios", "Legal", "Educación", "Logística"]
+  "Hero": {
+    "badge": "Software de agentes de IA para pymes · Santa Cruz, Bolivia",
+    "title": "Tu negocio atendiendo por WhatsApp las 24 horas, sin contratar más gente.",
+    "description": "AI Partner es un software de agentes de IA para pymes. Nuestros agentes responden a tus clientes, muestran tu catálogo, agendan citas, mandan cotizaciones y hacen seguimiento de ventas. Pagás una suscripción mensual y la implementación está incluida: lo dejamos funcionando por vos.",
+    "primaryCta": "Quiero mi agente de WhatsApp",
+    "secondaryCta": "Ver planes y precios",
+    "seals": [
+      "Suscripción mensual",
+      "Implementación incluida",
+      "Sin contrato de permanencia",
+      "Pago en bolivianos"
+    ],
+    "panel": {
+      "eyebrow": "Ejemplo de conversación",
+      "title": "Agente de WhatsApp",
+      "messages": [
+        {"from": "Cliente", "text": "¿Tienen stock y a qué hora atienden?"},
+        {"from": "Agente", "text": "Sí. Te muestro el catálogo con precios y los horarios libres."},
+        {"from": "Cliente", "text": "Quiero una cotización."},
+        {"from": "Agente", "text": "La armo con tus productos. Si hace falta una persona, paso el chat a tu equipo."}
+      ],
+      "footer": "Funciona sobre WhatsApp Business."
+    }
   },
   "Problem": {
     "eyebrow": "El problema",
-    "title": "Cada mes se pierden cientos de horas en tareas manuales que la IA ya puede optimizar.",
-    "description": "Antes de automatizar, identificamos cuellos de botella reales y cuantificamos su impacto para enfocar la implementación donde genera más retorno.",
+    "title": "Tu WhatsApp no para, pero tu equipo no da abasto.",
+    "description": "En una pyme el mismo equipo atiende clientes, cotiza, cobra y controla stock. Y casi todo pasa por WhatsApp.",
     "items": [
-      {"title": "Excel y reportes", "description": "Consolidación manual de datos, reportes recurrentes y errores de formato que consumen tiempo ejecutivo."},
-      {"title": "Emails y seguimiento", "description": "Respuestas repetitivas, seguimiento comercial y coordinación interna que ralentizan ventas y servicio."},
-      {"title": "Documentación", "description": "Creación de propuestas, actas, SOPs y resúmenes que se repiten en múltiples áreas."},
-      {"title": "Soporte al cliente", "description": "Clasificación, respuestas iniciales y escalamiento manual de solicitudes frecuentes."},
-      {"title": "Administración", "description": "Cotizaciones, cargas operativas y tareas de back office que desvían foco del crecimiento."},
-      {"title": "Gestión diaria", "description": "Procesos fragmentados entre personas, herramientas y mensajes sin una operación estandarizada."}
-    ]
-  },
-  "Solution": {
-    "eyebrow": "Nuestra solución",
-    "title": "Tus clientes no compran software. Ganan un partner que implementa IA donde realmente mueve el negocio.",
-    "description": "Combinamos estrategia, rediseño operativo, entrenamiento y automatización para integrar IA de forma segura y útil en el trabajo diario.",
-    "items": [
-      {"title": "Estrategia de IA", "description": "Priorizamos casos de uso con impacto financiero y operativo real."},
-      {"title": "Optimización de workflows", "description": "Eliminamos pasos innecesarios antes de automatizar para evitar digitalizar ineficiencias."},
-      {"title": "Capacitación ejecutiva y de equipos", "description": "Entrenamos a tus equipos para adoptar IA con claridad, criterio y consistencia."},
-      {"title": "Claude, ChatGPT y agentes", "description": "Configuramos herramientas, prompts y asistentes ajustados a tus procesos."},
-      {"title": "Bases de conocimiento", "description": "Organizamos información interna para respuestas más rápidas y mejores decisiones."},
-      {"title": "Automatización inteligente", "description": "Diseñamos flujos personalizados que conectan tareas, datos y aprobaciones."}
-    ]
-  },
-  "Methodology": {
-    "eyebrow": "Metodología",
-    "title": "Un proceso elegante y claro para pasar de oportunidad a resultados medibles.",
-    "items": [
-      {"title": "Diagnóstico Gratuito", "description": "Analizamos procesos, oportunidades y prioridades para definir una hoja de ruta inicial."},
-      {"title": "Onboarding", "description": "Alineamos objetivos, responsables, herramientas y métricas de éxito desde el primer día."},
-      {"title": "Framework AOA", "description": "Auditamos, optimizamos y automatizamos los procesos con mayor potencial."},
-      {"title": "Implementación", "description": "Construimos y activamos flujos, asistentes, conocimiento y entrenamiento aplicado."},
-      {"title": "Optimización Continua", "description": "Medimos resultados, iteramos prompts, ajustamos workflows y escalamos nuevas áreas."}
-    ]
-  },
-  "AOA": {
-    "eyebrow": "Framework AOA",
-    "title": "Auditamos primero, optimizamos después y automatizamos con contexto.",
-    "items": [
-      {"name": "Auditar", "description": "Analizamos cómo trabaja actualmente tu empresa y dónde se pierde valor."},
-      {"name": "Optimizar", "description": "Eliminamos pasos innecesarios antes de automatizar para asegurar eficiencia real."},
-      {"name": "Automatizar", "description": "Creamos soluciones de IA adaptadas a tus procesos, equipo y objetivos."}
-    ]
-  },
-  "Services": {
-    "eyebrow": "Servicios",
-    "title": "Capacidades listas para transformar operaciones, ventas, soporte y conocimiento interno.",
-    "cta": "Agendar llamada",
-    "items": [
-      {"title": "AI Consulting", "description": "Evaluación estratégica y roadmap de adopción por áreas."},
-      {"title": "AI Implementation", "description": "Diseño, despliegue y ajuste de flujos y asistentes de IA."},
-      {"title": "AI Training", "description": "Capacitación personalizada para liderazgo y equipos operativos."},
-      {"title": "Workflow Automation", "description": "Automatización de procesos repetitivos y de alto volumen."},
-      {"title": "AI Strategy", "description": "Priorización de iniciativas con foco en retorno y velocidad de ejecución."},
-      {"title": "Prompt Engineering", "description": "Prompts robustos, bibliotecas reutilizables y estándares internos."},
-      {"title": "Claude & ChatGPT Setup", "description": "Configuración segura y útil de herramientas para cada rol."},
-      {"title": "Knowledge Management", "description": "Organización de documentos, FAQs y activos para acceso rápido."},
-      {"title": "AI Agent Development", "description": "Agentes específicos para tareas, soporte interno y operaciones."}
-    ]
-  },
-  "PricingTeaser": {
-    "eyebrow": "Inversión",
-    "title": "Planes desde $250 USD por mes",
-    "description": "Cada empresa tiene necesidades diferentes. Durante el Diagnóstico Gratuito analizaremos tu operación y te recomendaremos el plan ideal para alcanzar el mayor retorno de inversión.",
-    "primaryCta": "Solicitar Diagnóstico Gratuito",
-    "secondaryCta": "Ver página de planes"
-  },
-  "WhyChooseUs": {
-    "eyebrow": "Por qué elegirnos",
-    "title": "Diseñamos implementaciones enfocadas en impacto real, adopción interna y soporte continuo.",
-    "items": [
-      {"title": "ROI Medible", "description": "Vinculamos cada iniciativa con horas recuperadas, costos evitados o productividad ganada."},
-      {"title": "Procesos Reales", "description": "Trabajamos sobre la operación existente, no sobre demos genéricas."},
-      {"title": "Implementación Práctica", "description": "Priorizamos soluciones simples, rápidas de activar y fáciles de sostener."},
-      {"title": "Capacitación Personalizada", "description": "Acompañamos a líderes y equipos con entrenamiento aplicado a su contexto."},
-      {"title": "Automatización Inteligente", "description": "Integramos IA solo donde aporta claridad, velocidad o consistencia."},
-      {"title": "Soporte Continuo", "description": "Monitoreamos resultados y evolucionamos la operación con nuevas oportunidades."}
-    ]
-  },
-  "Stats": {
-    "hours": "Horas mensuales que típicamente se recuperan en procesos repetitivos.",
-    "efficiency": "Mejora promedio estimada en velocidad operativa tras la implementación.",
-    "roi": "Potencial de retorno al priorizar automatizaciones con alto impacto."
-  },
-  "RoiCalculator": {
-    "title": "Calculadora rápida de ROI",
-    "description": "Estima cuánto valor podrías liberar al automatizar tareas repetitivas con IA.",
-    "hours": "Horas perdidas al mes",
-    "cost": "Costo promedio por hora",
-    "gain": "Reducción estimada con IA",
-    "result": "Ahorro estimado mensual",
-    "approx": "Aprox. equivalente:"
-  },
-  "OpportunityScore": {
-    "title": "AI Opportunity Score",
-    "description": "Marca los escenarios que ya existen en tu operación y visualiza tu nivel de oportunidad.",
-    "score": "Puntaje estimado",
-    "questions": [
-      "Tu equipo repite respuestas o reportes cada semana.",
-      "Hay procesos que dependen demasiado de una sola persona.",
-      "La información clave está dispersa entre chats, correos y archivos.",
-      "Quieres acelerar ventas, soporte o documentación con más consistencia."
-    ]
-  },
-  "Portal": {
-    "eyebrow": "Portal del cliente",
-    "title": "Cada cliente recibe un workspace privado para ejecutar la implementación con total claridad.",
-    "description": "Centralizamos entregables, seguimiento y activos de IA para mantener visibilidad y velocidad en cada fase.",
-    "items": [
-      {"title": "Grabaciones de llamadas", "description": "Acceso ordenado a sesiones, decisiones y acuerdos clave."},
-      {"title": "Documentación", "description": "Playbooks, SOPs, mapas de procesos y lineamientos siempre actualizados."},
-      {"title": "Prompts y activos", "description": "Bibliotecas listas para reutilizar y escalar internamente."},
-      {"title": "Inventario de workflows", "description": "Visión de procesos auditados, optimizados y automatizados."},
-      {"title": "Action items", "description": "Responsables, prioridades y próximos pasos visibles para todos."},
-      {"title": "Tracking de progreso", "description": "Seguimiento simple de entregables, métricas y wins tempranos."}
-    ]
-  },
-  "Assessment": {
-    "eyebrow": "Diagnóstico Gratuito",
-    "title": "La principal conversión del sitio: evaluar tu operación y detectar dónde la IA puede generar el mayor impacto.",
-    "description": "Usa nuestro formulario guiado para compartir contexto comercial, operativo y técnico antes de tu llamada de descubrimiento.",
-    "formTitle": "Vista previa del assessment",
-    "steps": [
-      {"step": "Paso 1", "title": "Contexto del negocio", "description": "Empresa, sector, tamaño, retos prioritarios y áreas interesadas en IA."},
-      {"step": "Paso 2", "title": "Procesos y herramientas", "description": "Tareas repetitivas, herramientas actuales, horas perdidas y uso existente de IA."},
-      {"step": "Paso 3", "title": "Inversión y timeline", "description": "Presupuesto, urgencia, comentarios adicionales y expectativas de implementación."}
+      {"title": "Mensajes tarde", "description": "Mensajes que se responden tarde, o a la noche, o nunca."},
+      {"title": "Las mismas preguntas", "description": "Las mismas preguntas todo el día: «¿precio?», «¿tienen stock?», «¿a qué hora atienden?»."},
+      {"title": "Cotizaciones que se enfrían", "description": "Cotizaciones que se mandan tarde y clientes que se van con la competencia."},
+      {"title": "Seguimiento que no ocurre", "description": "Ventas que se pierden porque nadie hizo el seguimiento."},
+      {"title": "Carga a mano", "description": "Horas cargando facturas e inventario a mano."}
     ],
-    "fields": [
-      "Company Name",
-      "Full Name",
-      "Position",
-      "Business Email",
-      "Industry",
-      "Company Size",
-      "Estimated hours lost monthly",
-      "Desired implementation timeline"
-    ],
-    "note": "El assessment oficial abre en un formulario externo para agilizar la captación y la reserva de llamadas.",
-    "primaryCta": "Solicitar Diagnóstico Gratuito",
-    "secondaryCta": "Reservar llamada"
+    "close": "Cada mensaje sin responder es una venta que se pierde. Un agente de IA lo atiende al instante."
   },
-  "Testimonials": {
-    "eyebrow": "Testimonios",
-    "title": "Placeholder premium para casos de éxito y transformación operativa.",
-    "slideLabel": "Testimonio {index}",
+  "Process": {
+    "eyebrow": "Cómo funciona",
+    "title": "Empezás en 3 pasos.",
     "items": [
-      {"quote": "Pasamos de tareas manuales dispersas a un proceso comercial con seguimiento, documentación y respuestas asistidas por IA.", "name": "CEO · Empresa de servicios", "role": "Santa Cruz de la Sierra"},
-      {"quote": "La capacitación nos permitió estandarizar el uso de ChatGPT y Claude sin improvisar ni perder calidad.", "name": "Directora de Operaciones", "role": "PyME en crecimiento"},
-      {"quote": "El diagnóstico dejó claro dónde automatizar primero y nos dio una hoja de ruta realista para capturar ROI.", "name": "Gerente General", "role": "Equipo regional"}
+      {"title": "Elegí tu plan.", "description": "Escogés cuántos agentes necesitás según tu negocio. Sin contratos largos."},
+      {"title": "Lo configuramos por vos.", "description": "Cargamos tu catálogo, precios, horarios y preguntas frecuentes, y conectamos el agente a tu WhatsApp. La implementación está incluida en la suscripción."},
+      {"title": "Tu agente empieza a trabajar.", "description": "Atiende a tus clientes las 24 horas. Vos ves las conversaciones y, cuando hace falta, una persona de tu equipo toma el control."}
     ]
+  },
+  "Agents": {
+    "eyebrow": "Los agentes",
+    "title": "Agentes de IA listos para trabajar en tu negocio.",
+    "audience": "Pensado para: comercios, clínicas y consultorios, ferreterías, distribuidoras e inmobiliarias de 3 a 50 personas.",
+    "items": [
+      {"title": "Agente de atención por WhatsApp", "description": "Responde consultas al instante, muestra tu catálogo y precios, y agenda citas o visitas."},
+      {"title": "Agente de cotizaciones", "description": "Arma y envía cotizaciones según tus productos y precios, en minutos."},
+      {"title": "Agente de seguimiento de ventas", "description": "Vuelve a escribirle al cliente que preguntó y no compró, y te avisa quién está listo para cerrar."},
+      {"title": "Agente de facturación", "description": "Ayuda a preparar y registrar facturas para que no las cargues a mano."},
+      {"title": "Agente de inventario", "description": "Consulta y actualiza tu stock, y avisa cuando un producto se está acabando."},
+      {"title": "Integración con tu sistema", "description": "Conectamos los agentes con el sistema que ya usás (planillas, sistema de ventas o facturación) para que todo quede registrado."}
+    ]
+  },
+  "Pricing": {
+    "eyebrow": "Planes y precios",
+    "title": "Una suscripción mensual. Implementación incluida.",
+    "description": "Tres planes con precio fijo. La implementación y la configuración están incluidas en los tres.",
+    "perMonth": "/ mes",
+    "note": "Precios en dólares de referencia. Se facturan en bolivianos al tipo de cambio del día. Podés subir o bajar de plan cuando quieras.",
+    "included": "Incluida",
+    "yes": "Incluido",
+    "no": "No incluido",
+    "rows": {
+      "agents": "Agentes incluidos",
+      "whatsapp": "Atención por WhatsApp (respuestas, catálogo, agenda)",
+      "quotes": "Cotizaciones y seguimiento de ventas",
+      "report": "Reporte semanal de conversaciones y ventas",
+      "billing": "Facturación e inventario",
+      "integration": "Integración con tu sistema",
+      "implementation": "Implementación y configuración",
+      "support": "Soporte"
+    }
+  },
+  "Why": {
+    "eyebrow": "Por qué AI Partner",
+    "title": "Software hecho en Santa Cruz, para pymes de Santa Cruz.",
+    "items": [
+      {"title": "Implementación incluida.", "description": "No te vendemos una herramienta para que la configures solo: dejamos tus agentes funcionando."},
+      {"title": "Precio fijo y claro.", "description": "Sabés cuánto pagás cada mes. Sin costos ocultos."},
+      {"title": "Hablás con una persona.", "description": "Soporte local, en tu idioma y en tu horario."},
+      {"title": "Calidad probada antes de salir.", "description": "Cada agente se prueba antes de atender a tus clientes, para que responda bien y no invente."}
+    ],
+    "founderEyebrow": "Quién está detrás",
+    "founder": "AI Partner fue fundada por Eduardo Andrés Urzúa Udaeta, ingeniero con más de 8 años en calidad de software, automatización e ingeniería de IA. Trabajó en proyectos para Scale Army, TCS/PwC, Banco Fassil, Banco Ganadero, everis y NTT Data. Esa experiencia en probar y automatizar sistemas críticos es la base de cómo construimos nuestros agentes: que funcionen bien, todos los días."
   },
   "Faq": {
-    "eyebrow": "FAQ",
-    "title": "Respuestas breves para reducir fricción antes del diagnóstico.",
+    "eyebrow": "Preguntas frecuentes",
+    "title": "Lo que suelen preguntar antes de empezar.",
     "items": [
-      {"question": "¿Trabajan solo con grandes empresas?", "answer": "No. Empezamos ayudando a emprendedores, PyMEs y equipos en crecimiento que quieren implementar IA con orden y foco en resultados."},
-      {"question": "¿Necesito herramientas avanzadas antes de empezar?", "answer": "No. Evaluamos tu stack actual y recomendamos la combinación más simple y efectiva para tu operación."},
-      {"question": "¿Implementan o solo asesoran?", "answer": "Hacemos ambas cosas: diagnóstico, estrategia, capacitación e implementación práctica de workflows y activos de IA."},
-      {"question": "¿Qué pasa después del diagnóstico?", "answer": "Recibes una recomendación inicial de roadmap y el plan más adecuado para tu empresa, junto con la opción de agendar la llamada de descubrimiento."}
+      {"question": "¿Qué es AI Partner?", "answer": "Es un software de agentes de inteligencia artificial para pymes. Los agentes atienden tu WhatsApp, cotizan, agendan y hacen seguimiento de ventas. Lo pagás con una suscripción mensual que ya incluye la implementación."},
+      {"question": "¿Necesito saber de tecnología?", "answer": "No. Nosotros configuramos todo: cargamos tu información, conectamos el agente a tu WhatsApp y lo probamos. Vos solo nos contás cómo funciona tu negocio."},
+      {"question": "¿Cuánto tarda en estar funcionando?", "answer": "Depende del plan y de la información que tengas lista. Un agente de atención por WhatsApp se puede activar en pocos días; las integraciones con tu sistema toman más tiempo."},
+      {"question": "¿Qué pasa con mis datos?", "answer": "Tus datos y los de tus clientes son tuyos. Los usamos solo para que tus agentes funcionen, no los vendemos ni los compartimos con terceros, y el acceso está restringido. Si cancelás, te los devolvemos y los eliminamos de nuestros sistemas."},
+      {"question": "¿El agente reemplaza a mi equipo?", "answer": "No. Se encarga de lo repetitivo para que tu equipo se dedique a vender y atender lo importante. Cuando una conversación necesita a una persona, el agente la pasa a tu equipo."},
+      {"question": "¿Cómo pago?", "answer": "Con una suscripción mensual. Los precios están en dólares de referencia y se facturan en bolivianos al tipo de cambio del día."},
+      {"question": "¿Puedo cancelar?", "answer": "Sí. No hay contrato de permanencia: podés cancelar cuando quieras y no se te cobra el mes siguiente."}
     ]
+  },
+  "FinalCta": {
+    "title": "Dejá que un agente de IA atienda tu WhatsApp desde este mes.",
+    "description": "Escribinos y te mostramos cómo funcionaría en tu negocio, sin compromiso.",
+    "primaryCta": "Escribinos por WhatsApp",
+    "secondaryCta": "Ver planes"
   },
   "Blog": {
     "eyebrow": "Blog",
-    "title": "Estructura editorial lista para publicar contenido útil sobre IA aplicada a negocio.",
-    "categories": ["AI", "ChatGPT", "Claude", "Automation", "Business", "Productivity"],
-    "posts": [
-      {"category": "AI", "title": "Cómo detectar procesos listos para IA en una PyME", "excerpt": "Una guía inicial para identificar dónde la IA genera impacto más rápido sin grandes inversiones."},
-      {"category": "Automation", "title": "Antes de automatizar, optimiza", "excerpt": "Por qué eliminar pasos innecesarios primero produce mejores resultados que automatizar procesos rotos."},
-      {"category": "Productivity", "title": "Cómo entrenar equipos para usar IA con consistencia", "excerpt": "Estructura, adopción y gobierno ligero para que la IA no dependa solo de personas curiosas."}
-    ]
-  },
-  "About": {
-    "eyebrow": "Nosotros",
-    "title": "AI Partner nace para convertir la adopción de IA en una ventaja operativa tangible.",
-    "description": "Somos un partner de implementación enfocado en ayudar a empresas a integrar IA con claridad, simplicidad y alto retorno. Nuestro foco inicial está en Santa Cruz de la Sierra, con visión regional e internacional.",
-    "values": [
-      {"title": "Confianza", "description": "Diseñamos experiencias sobrias, profesionales y orientadas a resultados."},
-      {"title": "Innovación útil", "description": "Aplicamos IA para resolver problemas reales, no para seguir modas."},
-      {"title": "Simplicidad", "description": "Priorizamos soluciones que el equipo pueda adoptar y mantener con facilidad."}
-    ]
+    "title": "Notas para pymes que quieren un agente de WhatsApp."
   },
   "Contact": {
     "eyebrow": "Contacto",
-    "title": "Agenda tu evaluación y da el siguiente paso con una implementación de IA alineada a tu negocio.",
-    "description": "Si quieres reducir trabajo manual, acelerar equipos y operar con más claridad, conversemos.",
-    "emailPlaceholder": "contacto@tuempresa.com",
-    "primaryCta": "Solicitar Diagnóstico Gratuito",
-    "secondaryCta": "Agendar llamada",
-    "mapPlaceholder": "Google Maps placeholder · Santa Cruz de la Sierra, Bolivia",
-    "analytics": "Placeholder listo para Google Analytics 4",
-    "pixel": "Placeholder listo para Meta Pixel"
-  },
-  "PricingPage": {
-    "metaTitle": "Planes de AI Partner",
-    "metaDescription": "Conoce nuestros planes de implementación de IA para emprendedores, empresas en crecimiento y organizaciones con mayor complejidad operativa.",
-    "eyebrow": "Página de precios",
-    "title": "Precios de consultoría en IA: desde USD 250/mes",
-    "description": "Todos los planes se adaptan durante el diagnóstico gratuito según tu operación, equipo, prioridades y velocidad deseada de implementación.",
-    "popular": "Más Popular",
-    "approx": "Aprox. equivalente en Bolivianos:",
-    "cta": "Solicitar Diagnóstico Gratuito",
-    "plans": [
-      {"name": "Emprendedor", "description": "Ideal para emprendedores y pequeñas empresas que quieren estructurar sus primeros workflows con IA. USD 250 al mes."},
-      {"name": "Profesional", "description": "Ideal para empresas en crecimiento que necesitan automatizar más áreas y capacitar a su equipo. USD 500 al mes."},
-      {"name": "Empresarial", "description": "Para organizaciones que desean transformar múltiples áreas con IA y una operación más compleja. USD 900 al mes."}
-    ]
+    "title": "Santa Cruz de la Sierra, Bolivia.",
+    "description": "Escribinos por WhatsApp o por correo. Te mostramos cómo funcionaría el agente en tu negocio, sin compromiso."
   },
   "Footer": {
-    "description": "Implementación de IA para empresas que buscan ahorrar tiempo, reducir costos y aumentar productividad con una ejecución práctica.",
+    "description": "Software de agentes de IA para pymes.",
     "navigation": "Navegación",
     "home": "Inicio",
-    "pricing": "Precios",
-    "technologies": "Tecnologías",
-    "blog": "Blog",
-    "diagnosis": "Diagnóstico",
-    "solutions": "Soluciones",
+    "process": "Cómo funciona",
+    "agents": "Agentes",
+    "pricing": "Planes",
+    "faq": "Preguntas frecuentes",
     "contact": "Contacto",
-    "ctaTitle": "Próximo paso",
-    "assessment": "Solicitar Diagnóstico Gratuito",
-    "booking": "Reservar llamada"
+    "blog": "Blog",
+    "industries": "Por rubro",
+    "whatsapp": "Agente de WhatsApp para comercios",
+    "clinics": "Agente para clínicas y consultorios",
+    "realEstate": "Agente para inmobiliarias",
+    "hardware": "Agente para ferreterías y distribuidoras",
+    "company": "AI Partner es una empresa unipersonal registrada en Santa Cruz, Bolivia. NIT 5861862012.",
+    "copyright": "© 2026 AI Partner. Hecho en Bolivia"
   },
   "CookieBanner": {
     "description": "Usamos cookies y herramientas de analítica configurables para mejorar la experiencia y medir rendimiento comercial.",

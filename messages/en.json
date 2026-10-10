@@ -1,276 +1,158 @@
 {
-  "Metadata": {
-    "title": "AI Partner | AI implementation for businesses in Bolivia",
-    "description": "We implement AI in a practical way to help businesses save time, reduce costs and improve productivity through consulting, automation and training.",
-    "keywords": "AI, consulting, automation, ChatGPT, Claude, Bolivia, Santa Cruz, productivity"
-  },
   "Nav": {
     "home": "Home",
-    "services": "Services",
-    "process": "How It Works",
-    "cases": "Success Stories",
+    "proceso": "How it works",
+    "agentes": "Agents",
+    "pricing": "Plans",
+    "preguntas": "FAQ",
+    "contacto": "Contact",
     "blog": "Blog",
-    "about": "About",
-    "contact": "Contact",
-    "pricing": "Pricing",
-    "technologies": "Technologies",
-    "cta": "Request a Free AI Assessment",
+    "cta": "I want my WhatsApp agent",
     "toggleMenu": "Open or close menu"
   },
-  "Hero": {
-    "badge": "AI implementation partner",
-    "title": "We implement Artificial Intelligence so your business can move faster, with less effort and better results.",
-    "description": "We help businesses optimize processes, remove repetitive work and integrate AI in a practical way through tailored consulting, automation and training.",
-    "primaryCta": "Request a Free AI Assessment",
-    "secondaryCta": "See Our Process",
-    "stats": {
-      "consulting": "Strategic consulting",
-      "consultingValue": "ROI-focused assessment",
-      "implementation": "Practical implementation",
-      "implementationValue": "Real processes + AI",
-      "support": "Ongoing guidance",
-      "supportValue": "Training and support"
-    },
-    "panel": {
-      "title": "Executive dashboard",
-      "subtitle": "Prioritized AI opportunities",
-      "items": [
-        {"title": "Sales and follow-up", "metric": "-32h/mo"},
-        {"title": "Reports and documentation", "metric": "-54h/mo"},
-        {"title": "Support and operations", "metric": "+38% efficiency"}
-      ],
-      "footer": "We design automations, training and workflows to generate measurable value from the first few weeks."
-    }
+  "TopBar": {
+    "text": "Try how an AI agent replies on WhatsApp.",
+    "cta": "See the WhatsApp demo"
   },
-  "TrustedBy": {
-    "title": "Built for teams that want premium growth through better operations",
-    "items": ["Retail", "Healthcare", "Services", "Legal", "Education", "Logistics"]
+  "Hero": {
+    "badge": "AI agent software for small businesses · Santa Cruz, Bolivia",
+    "title": "Your business answering WhatsApp 24 hours a day, without hiring more people.",
+    "description": "AI Partner is AI agent software for small businesses. Our agents reply to your customers, show your catalog, book appointments, send quotes and follow up on sales. You pay a monthly subscription and implementation is included: we leave it running for you.",
+    "primaryCta": "I want my WhatsApp agent",
+    "secondaryCta": "See plans and prices",
+    "seals": [
+      "Monthly subscription",
+      "Implementation included",
+      "No lock-in contract",
+      "Pay in bolivianos"
+    ],
+    "panel": {
+      "eyebrow": "Sample conversation",
+      "title": "WhatsApp agent",
+      "messages": [
+        {"from": "Customer", "text": "Do you have it in stock, and what are your hours?"},
+        {"from": "Agent", "text": "Yes. I’ll show the catalog with prices and the open times."},
+        {"from": "Customer", "text": "I want a quote."},
+        {"from": "Agent", "text": "I’ll build it from your products. If a person is needed, I hand the chat to your team."}
+      ],
+      "footer": "Runs on WhatsApp Business."
+    }
   },
   "Problem": {
     "eyebrow": "The problem",
-    "title": "Every month, businesses lose hundreds of hours to manual work that AI can already improve.",
-    "description": "Before automating, we identify real bottlenecks and quantify their impact so implementation focuses on the highest-return areas.",
+    "title": "Your WhatsApp never stops, and your team can’t keep up.",
+    "description": "In a small business the same team serves customers, quotes, collects and tracks stock. Almost all of it happens on WhatsApp.",
     "items": [
-      {"title": "Spreadsheets and reporting", "description": "Manual data consolidation, recurring reports and formatting errors that consume executive time."},
-      {"title": "Email and follow-up", "description": "Repetitive replies, sales follow-up and internal coordination that slow service and revenue."},
-      {"title": "Documentation", "description": "Proposals, meeting notes, SOPs and summaries that are recreated across multiple teams."},
-      {"title": "Customer support", "description": "Manual triage, first responses and escalation for recurring requests."},
-      {"title": "Administration", "description": "Quotes, operational overhead and back-office work that steal focus from growth."},
-      {"title": "Daily execution", "description": "Fragmented processes across people, tools and messages with no standardized operating model."}
-    ]
-  },
-  "Solution": {
-    "eyebrow": "Our solution",
-    "title": "Your company is not buying software. It gains an implementation partner that brings AI into the business.",
-    "description": "We combine strategy, operational redesign, training and automation to integrate AI safely and usefully into everyday work.",
-    "items": [
-      {"title": "AI strategy", "description": "We prioritize use cases with real financial and operational impact."},
-      {"title": "Workflow optimization", "description": "We remove unnecessary steps before automating so inefficiency is not simply digitized."},
-      {"title": "Executive and team training", "description": "We train your teams to adopt AI with clarity, judgment and consistency."},
-      {"title": "Claude, ChatGPT and agents", "description": "We configure tools, prompts and assistants tailored to your workflows."},
-      {"title": "Knowledge bases", "description": "We organize internal information for faster answers and better decisions."},
-      {"title": "Intelligent automation", "description": "We design custom flows that connect tasks, data and approvals."}
-    ]
-  },
-  "Methodology": {
-    "eyebrow": "Methodology",
-    "title": "A clear and elegant process that turns opportunity into measurable outcomes.",
-    "items": [
-      {"title": "Free Assessment", "description": "We review your processes, opportunities and priorities to define an initial roadmap."},
-      {"title": "Onboarding", "description": "We align goals, owners, tools and success metrics from day one."},
-      {"title": "AOA Framework", "description": "We audit, optimize and automate the processes with the highest potential."},
-      {"title": "Implementation", "description": "We deploy workflows, assistants, knowledge systems and applied training."},
-      {"title": "Continuous Optimization", "description": "We measure results, refine prompts, adjust workflows and scale new opportunities."}
-    ]
-  },
-  "AOA": {
-    "eyebrow": "AOA Framework",
-    "title": "We audit first, optimize next and automate with real context.",
-    "items": [
-      {"name": "Audit", "description": "We analyze how your business currently works and where value is being lost."},
-      {"name": "Optimize", "description": "We remove unnecessary steps before automation to secure real efficiency."},
-      {"name": "Automate", "description": "We build AI solutions tailored to your processes, team and business goals."}
-    ]
-  },
-  "Services": {
-    "eyebrow": "Services",
-    "title": "Capabilities ready to transform operations, sales, support and internal knowledge.",
-    "cta": "Book a call",
-    "items": [
-      {"title": "AI Consulting", "description": "Strategic assessment and adoption roadmap by business area."},
-      {"title": "AI Implementation", "description": "Design, deployment and tuning of AI workflows and assistants."},
-      {"title": "AI Training", "description": "Tailored training for leaders and operational teams."},
-      {"title": "Workflow Automation", "description": "Automation for repetitive, high-volume processes."},
-      {"title": "AI Strategy", "description": "Prioritization focused on ROI and speed of execution."},
-      {"title": "Prompt Engineering", "description": "Reliable prompts, reusable libraries and internal standards."},
-      {"title": "Claude & ChatGPT Setup", "description": "Practical, secure setup for each role in the company."},
-      {"title": "Knowledge Management", "description": "Organization of documents, FAQs and assets for rapid access."},
-      {"title": "AI Agent Development", "description": "Task-specific agents for operations and internal support."}
-    ]
-  },
-  "PricingTeaser": {
-    "eyebrow": "Investment",
-    "title": "Plans starting at $250 USD per month",
-    "description": "Every business has different needs. During the Free Assessment we review your operation and recommend the ideal plan to maximize return on investment.",
-    "primaryCta": "Request a Free AI Assessment",
-    "secondaryCta": "See pricing page"
-  },
-  "WhyChooseUs": {
-    "eyebrow": "Why choose us",
-    "title": "We design implementations around real impact, internal adoption and ongoing support.",
-    "items": [
-      {"title": "Measurable ROI", "description": "We connect each initiative to hours recovered, costs avoided or productivity gained."},
-      {"title": "Real processes", "description": "We work on your actual operation, not generic demos."},
-      {"title": "Practical implementation", "description": "We favor simple solutions that can launch quickly and last."},
-      {"title": "Tailored training", "description": "We guide leaders and teams with training grounded in their real workflows."},
-      {"title": "Smart automation", "description": "We integrate AI only where it improves clarity, speed or consistency."},
-      {"title": "Ongoing support", "description": "We monitor results and evolve the operation with new opportunities."}
-    ]
-  },
-  "Stats": {
-    "hours": "Typical monthly hours recovered from repetitive work.",
-    "efficiency": "Estimated average improvement in operational speed after implementation.",
-    "roi": "Potential return when automation is prioritized around business impact."
-  },
-  "RoiCalculator": {
-    "title": "Quick ROI calculator",
-    "description": "Estimate how much value you could unlock by automating repetitive work with AI.",
-    "hours": "Hours lost per month",
-    "cost": "Average hourly cost",
-    "gain": "Estimated reduction with AI",
-    "result": "Estimated monthly savings",
-    "approx": "Approximate equivalent:"
-  },
-  "OpportunityScore": {
-    "title": "AI Opportunity Score",
-    "description": "Check the situations that already exist in your operation and see your opportunity level.",
-    "score": "Estimated score",
-    "questions": [
-      "Your team repeats the same replies or reports every week.",
-      "Some processes depend too much on a single person.",
-      "Critical information is spread across chat, email and files.",
-      "You want to improve sales, support or documentation with more consistency."
-    ]
-  },
-  "Portal": {
-    "eyebrow": "Client portal",
-    "title": "Every client gets a private workspace to run implementation with total clarity.",
-    "description": "We centralize deliverables, tracking and AI assets so every phase stays visible and fast-moving.",
-    "items": [
-      {"title": "Call recordings", "description": "Organized access to sessions, decisions and key agreements."},
-      {"title": "Documentation", "description": "Playbooks, SOPs, process maps and always-current guidance."},
-      {"title": "Prompts and assets", "description": "Reusable libraries ready to scale internally."},
-      {"title": "Workflow inventory", "description": "Clear visibility into audited, optimized and automated processes."},
-      {"title": "Action items", "description": "Owners, priorities and next steps visible to everyone."},
-      {"title": "Progress tracking", "description": "Simple tracking of deliverables, metrics and quick wins."}
-    ]
-  },
-  "Assessment": {
-    "eyebrow": "Free AI Assessment",
-    "title": "The main conversion goal: evaluate your operation and detect where AI can create the greatest impact.",
-    "description": "Use our guided form to share business, operational and technical context before your discovery call.",
-    "formTitle": "Assessment preview",
-    "steps": [
-      {"step": "Step 1", "title": "Business context", "description": "Company, industry, size, main challenges and departments interested in AI."},
-      {"step": "Step 2", "title": "Processes and tools", "description": "Repetitive tasks, current tools, hours lost and existing AI adoption."},
-      {"step": "Step 3", "title": "Budget and timeline", "description": "Budget, urgency, extra comments and implementation expectations."}
+      {"title": "Late replies", "description": "Messages answered late, at night, or never."},
+      {"title": "The same questions", "description": "The same questions all day: “price?”, “in stock?”, “what time are you open?”."},
+      {"title": "Quotes that go cold", "description": "Quotes sent late, and customers who leave for a competitor."},
+      {"title": "Follow-up that never happens", "description": "Sales lost because nobody followed up."},
+      {"title": "Manual entry", "description": "Hours typing invoices and inventory by hand."}
     ],
-    "fields": [
-      "Company Name",
-      "Full Name",
-      "Position",
-      "Business Email",
-      "Industry",
-      "Company Size",
-      "Estimated hours lost monthly",
-      "Desired implementation timeline"
-    ],
-    "note": "The official assessment opens in an external form to streamline lead capture and scheduling.",
-    "primaryCta": "Request a Free AI Assessment",
-    "secondaryCta": "Book a call"
+    "close": "Every unanswered message is a sale you lose. An AI agent answers it right away."
   },
-  "Testimonials": {
-    "eyebrow": "Testimonials",
-    "title": "Premium placeholders ready for future proof points and success stories.",
-    "slideLabel": "Testimonial {index}",
+  "Process": {
+    "eyebrow": "How it works",
+    "title": "You start in 3 steps.",
     "items": [
-      {"quote": "We moved from scattered manual work to a sales process supported by AI-driven follow-up, documentation and response support.", "name": "CEO · Service company", "role": "Santa Cruz de la Sierra"},
-      {"quote": "The training helped us standardize how we use ChatGPT and Claude without improvising or losing quality.", "name": "Operations Director", "role": "Growing SMB"},
-      {"quote": "The assessment made it obvious where to automate first and gave us a realistic roadmap to capture ROI.", "name": "General Manager", "role": "Regional team"}
+      {"title": "Choose your plan.", "description": "You pick how many agents your business needs. No long contracts."},
+      {"title": "We set it up for you.", "description": "We load your catalog, prices, hours and frequent questions, and connect the agent to your WhatsApp. Implementation is included in the subscription."},
+      {"title": "Your agent starts working.", "description": "It serves your customers 24 hours a day. You see the conversations and, when needed, someone on your team takes over."}
     ]
+  },
+  "Agents": {
+    "eyebrow": "The agents",
+    "title": "AI agents ready to work in your business.",
+    "audience": "Built for shops, clinics and practices, hardware stores, distributors and real estate agencies with 3 to 50 people.",
+    "items": [
+      {"title": "WhatsApp service agent", "description": "Answers questions right away, shows your catalog and prices, and books appointments or visits."},
+      {"title": "Quoting agent", "description": "Builds and sends quotes from your products and prices, in minutes."},
+      {"title": "Sales follow-up agent", "description": "Writes again to the customer who asked and did not buy, and tells you who is ready to close."},
+      {"title": "Invoicing agent", "description": "Helps prepare and record invoices so you don’t type them by hand."},
+      {"title": "Inventory agent", "description": "Checks and updates your stock, and warns you when a product is running out."},
+      {"title": "Integration with your system", "description": "We connect the agents to the system you already use (spreadsheets, sales or invoicing software) so everything stays recorded."}
+    ]
+  },
+  "Pricing": {
+    "eyebrow": "Plans and prices",
+    "title": "One monthly subscription. Implementation included.",
+    "description": "Three plans with a fixed price. Implementation and setup are included in all three.",
+    "perMonth": "/ month",
+    "note": "Prices are US dollars for reference. They are billed in bolivianos at the day’s exchange rate. You can move up or down a plan whenever you want.",
+    "included": "Included",
+    "yes": "Included",
+    "no": "Not included",
+    "rows": {
+      "agents": "Agents included",
+      "whatsapp": "WhatsApp service (replies, catalog, scheduling)",
+      "quotes": "Quotes and sales follow-up",
+      "report": "Weekly report of conversations and sales",
+      "billing": "Invoicing and inventory",
+      "integration": "Integration with your system",
+      "implementation": "Implementation and setup",
+      "support": "Support"
+    }
+  },
+  "Why": {
+    "eyebrow": "Why AI Partner",
+    "title": "Software made in Santa Cruz, for small businesses in Santa Cruz.",
+    "items": [
+      {"title": "Implementation included.", "description": "We don’t sell you a tool to configure alone: we leave your agents running."},
+      {"title": "A clear fixed price.", "description": "You know what you pay each month. No hidden costs."},
+      {"title": "You talk to a person.", "description": "Local support, in your language and on your schedule."},
+      {"title": "Tested before it goes live.", "description": "Each agent is tested before it talks to your customers, so it answers well and does not invent."}
+    ],
+    "founderEyebrow": "Who is behind it",
+    "founder": "AI Partner was founded by Eduardo Andrés Urzúa Udaeta, an engineer with more than 8 years in software quality, automation and AI engineering. He worked on projects for Scale Army, TCS/PwC, Banco Fassil, Banco Ganadero, everis and NTT Data. That experience testing and automating critical systems is the basis of how we build our agents: so they work well, every day."
   },
   "Faq": {
-    "eyebrow": "FAQ",
-    "title": "Short answers that reduce friction before the assessment.",
+    "eyebrow": "Frequently asked questions",
+    "title": "What people usually ask before they start.",
     "items": [
-      {"question": "Do you only work with large companies?", "answer": "No. We start by helping founders, SMBs and growth-stage teams that want to implement AI with clarity and discipline."},
-      {"question": "Do I need advanced tools before we start?", "answer": "No. We evaluate your current stack and recommend the simplest effective combination for your operation."},
-      {"question": "Do you implement or just advise?", "answer": "Both: assessment, strategy, training and hands-on implementation of workflows and AI assets."},
-      {"question": "What happens after the assessment?", "answer": "You receive an initial roadmap recommendation and the most suitable plan for your business, plus the option to schedule a discovery call."}
+      {"question": "What is AI Partner?", "answer": "It is AI agent software for small businesses. The agents handle your WhatsApp, send quotes, book appointments and follow up on sales. You pay a monthly subscription that already includes implementation."},
+      {"question": "Do I need to know technology?", "answer": "No. We set everything up: we load your information, connect the agent to your WhatsApp and test it. You only tell us how your business works."},
+      {"question": "How long until it is running?", "answer": "It depends on the plan and on the information you have ready. A WhatsApp service agent can go live in a few days; integrations with your system take longer."},
+      {"question": "What happens to my data?", "answer": "Your data and your customers’ data are yours. We use them only so your agents work, we do not sell them or share them with third parties, and access is restricted. If you cancel, we return them and delete them from our systems."},
+      {"question": "Does the agent replace my team?", "answer": "No. It handles the repetitive work so your team can sell and take care of what matters. When a conversation needs a person, the agent hands it to your team."},
+      {"question": "How do I pay?", "answer": "With a monthly subscription. Prices are in US dollars for reference and are billed in bolivianos at the day’s exchange rate."},
+      {"question": "Can I cancel?", "answer": "Yes. There is no lock-in contract: you can cancel whenever you want and you are not charged the following month."}
     ]
+  },
+  "FinalCta": {
+    "title": "Let an AI agent answer your WhatsApp starting this month.",
+    "description": "Message us and we will show you how it would work in your business, with no obligation.",
+    "primaryCta": "Message us on WhatsApp",
+    "secondaryCta": "See plans"
   },
   "Blog": {
     "eyebrow": "Blog",
-    "title": "Editorial structure ready for practical content about AI applied to business.",
-    "categories": ["AI", "ChatGPT", "Claude", "Automation", "Business", "Productivity"],
-    "posts": [
-      {"category": "AI", "title": "How to spot AI-ready processes in an SMB", "excerpt": "A practical guide for identifying where AI can create impact fast without major investment."},
-      {"category": "Automation", "title": "Optimize before you automate", "excerpt": "Why removing unnecessary steps first produces better outcomes than automating broken processes."},
-      {"category": "Productivity", "title": "How to train teams to use AI consistently", "excerpt": "Structure, adoption and lightweight governance so AI does not depend on a few curious people."}
-    ]
-  },
-  "About": {
-    "eyebrow": "About",
-    "title": "AI Partner exists to turn AI adoption into a tangible operational advantage.",
-    "description": "We are an implementation partner focused on helping businesses integrate AI with clarity, simplicity and strong ROI. Our initial focus is Santa Cruz de la Sierra, with a regional and international outlook.",
-    "values": [
-      {"title": "Trust", "description": "We design sober, professional experiences focused on outcomes."},
-      {"title": "Useful innovation", "description": "We apply AI to solve real business problems, not to chase hype."},
-      {"title": "Simplicity", "description": "We prioritize solutions teams can adopt and maintain with confidence."}
-    ]
+    "title": "Notes for small businesses that want a WhatsApp agent."
   },
   "Contact": {
     "eyebrow": "Contact",
-    "title": "Book your assessment and take the next step with an AI implementation aligned to your business.",
-    "description": "If you want to reduce manual work, accelerate teams and operate more clearly, let’s talk.",
-    "emailPlaceholder": "contact@yourcompany.com",
-    "primaryCta": "Request a Free AI Assessment",
-    "secondaryCta": "Book a call",
-    "mapPlaceholder": "Google Maps placeholder · Santa Cruz de la Sierra, Bolivia",
-    "analytics": "Placeholder ready for Google Analytics 4",
-    "pixel": "Placeholder ready for Meta Pixel"
-  },
-  "PricingPage": {
-    "metaTitle": "AI Partner Pricing",
-    "metaDescription": "Explore AI implementation plans for founders, growing businesses and organizations with more complex operational needs.",
-    "eyebrow": "Pricing page",
-    "title": "Clear plans to start with AI without losing focus on return.",
-    "description": "Every plan is refined during the free assessment according to your operation, team, priorities and implementation speed.",
-    "popular": "Most Popular",
-    "approx": "Approximate equivalent in Bolivianos:",
-    "cta": "Request a Free AI Assessment",
-    "plans": [
-      {"name": "Starter", "description": "For founders and small businesses starting their first AI workflows. USD 250 per month."},
-      {"name": "Professional", "description": "For growing companies that need to automate more areas and train the team. USD 500 per month."},
-      {"name": "Business", "description": "For organizations transforming multiple departments with AI and higher operational complexity. USD 900 per month."}
-    ]
+    "title": "Santa Cruz de la Sierra, Bolivia.",
+    "description": "Message us on WhatsApp or by email. We will show you how the agent would work in your business, with no obligation."
   },
   "Footer": {
-    "description": "AI implementation for businesses that want to save time, reduce costs and increase productivity through practical execution.",
+    "description": "AI agent software for small businesses.",
     "navigation": "Navigation",
     "home": "Home",
-    "pricing": "Pricing",
-    "technologies": "Technologies",
-    "blog": "Blog",
-    "diagnosis": "Assessment",
-    "solutions": "Solutions",
+    "process": "How it works",
+    "agents": "Agents",
+    "pricing": "Plans",
+    "faq": "FAQ",
     "contact": "Contact",
-    "ctaTitle": "Next step",
-    "assessment": "Request a Free AI Assessment",
-    "booking": "Book a call"
+    "blog": "Blog",
+    "industries": "By industry",
+    "whatsapp": "WhatsApp agent for shops",
+    "clinics": "Agent for clinics and practices",
+    "realEstate": "Agent for real estate agencies",
+    "hardware": "Agent for hardware stores and distributors",
+    "company": "AI Partner is a sole proprietorship registered in Santa Cruz, Bolivia. NIT 5861862012.",
+    "copyright": "© 2026 AI Partner. Made in Bolivia"
   },
   "CookieBanner": {
-    "description": "We use configurable cookies and analytics tooling to improve the experience and measure commercial performance.",
+    "description": "We use configurable cookies and analytics to improve the experience and measure commercial performance.",
     "accept": "Accept"
   },
   "LiveChat": {

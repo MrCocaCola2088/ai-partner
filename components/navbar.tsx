@@ -7,15 +7,28 @@ import {LocaleSwitcher} from '@/components/locale-switcher';
 import {ThemeToggle} from '@/components/theme-toggle';
 import {Button} from '@/components/ui/button';
 import {Link} from '@/i18n/navigation';
+import {whatsappHref} from '@/lib/site';
 import {cn} from '@/lib/utils';
 
-const sectionIds = ['services', 'process', 'cases', 'about', 'contact'] as const;
+const startMessage = {
+  es: 'Hola, quiero mi agente de WhatsApp.',
+  en: 'Hi, I want my WhatsApp agent.',
+};
+
+const hashLinks = [
+  {id: 'proceso', hash: 'proceso'},
+  {id: 'agentes', hash: 'agentes'},
+  {id: 'preguntas', hash: 'preguntas'},
+  {id: 'contacto', hash: 'contacto'},
+] as const;
 
 export function Navbar() {
   const t = useTranslations('Nav');
   const locale = useLocale();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const prefix = locale === 'es' ? '' : '/en';
+  const lang = locale === 'en' ? 'en' : 'es';
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 16);
@@ -28,9 +41,7 @@ export function Navbar() {
     <header
       className={cn(
         'sticky top-0 z-50 transition-all',
-        scrolled
-          ? 'border-b border-white/10 bg-slate-950/80 backdrop-blur-xl'
-          : 'bg-transparent'
+        scrolled ? 'border-b border-white/10 bg-slate-950/80 backdrop-blur-xl' : 'bg-transparent'
       )}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
@@ -41,21 +52,11 @@ export function Navbar() {
           <Link className="text-sm text-slate-300 transition hover:text-white" href="/">
             {t('home')}
           </Link>
-          {sectionIds.map((id) => (
-            <a
-              key={id}
-              className="text-sm text-slate-300 transition hover:text-white"
-              href={`${locale === 'es' ? '' : '/en'}/#${id}`}
-            >
-              {t(id)}
+          {hashLinks.map((item) => (
+            <a key={item.id} className="text-sm text-slate-300 transition hover:text-white" href={`${prefix}/#${item.hash}`}>
+              {t(item.id)}
             </a>
           ))}
-          <Link href="/tecnologias" className="text-sm text-slate-300 transition hover:text-white">
-            {t('technologies')}
-          </Link>
-          <Link href="/blog" className="text-sm text-slate-300 transition hover:text-white">
-            {t('blog')}
-          </Link>
           <Link href="/precios" className="text-sm text-slate-300 transition hover:text-white">
             {t('pricing')}
           </Link>
@@ -64,7 +65,9 @@ export function Navbar() {
           <LocaleSwitcher />
           <ThemeToggle />
           <Button asChild>
-            <Link href="/diagnostico">{t('cta')}</Link>
+            <a href={whatsappHref(startMessage[lang])} target="_blank" rel="noreferrer">
+              {t('cta')}
+            </a>
           </Button>
         </div>
         <button
@@ -82,22 +85,16 @@ export function Navbar() {
             <Link href="/" onClick={() => setOpen(false)} className="text-sm text-slate-200">
               {t('home')}
             </Link>
-            {sectionIds.map((id) => (
+            {hashLinks.map((item) => (
               <a
-                key={id}
-                href={`${locale === 'es' ? '' : '/en'}/#${id}`}
+                key={item.id}
+                href={`${prefix}/#${item.hash}`}
                 className="text-sm text-slate-200"
                 onClick={() => setOpen(false)}
               >
-                {t(id)}
+                {t(item.id)}
               </a>
             ))}
-            <Link href="/tecnologias" className="text-sm text-slate-200" onClick={() => setOpen(false)}>
-              {t('technologies')}
-            </Link>
-            <Link href="/blog" className="text-sm text-slate-200" onClick={() => setOpen(false)}>
-              {t('blog')}
-            </Link>
             <Link href="/precios" className="text-sm text-slate-200" onClick={() => setOpen(false)}>
               {t('pricing')}
             </Link>
@@ -106,9 +103,9 @@ export function Navbar() {
               <ThemeToggle />
             </div>
             <Button asChild>
-              <Link href="/diagnostico" onClick={() => setOpen(false)}>
+              <a href={whatsappHref(startMessage[lang])} target="_blank" rel="noreferrer" onClick={() => setOpen(false)}>
                 {t('cta')}
-              </Link>
+              </a>
             </Button>
           </div>
         </div>
