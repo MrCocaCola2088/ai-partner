@@ -86,8 +86,8 @@ export const blogPostsA: BlogPost[] = [
             en: 'For example, an importer that writes similar quotes could spend the first two weeks only on a prompt template and a list of data that must not be pasted into the chat. Only then would it automate the step “when the customer email arrives, create the row”. Doing it backwards —connecting tools before knowing what should be said— produces a bot that sounds confident and is wrong.',
           },
           {
-            es: 'Los planes de AI Partner arrancan en USD 250 al mes para ese primer alcance, siguen en USD 500 cuando hay más de un flujo o un equipo para capacitar y llegan a USD 900 cuando varias áreas necesitan acompañamiento. No son un contrato largo. El diagnóstico gratuito existe para elegir el plan con el proceso encima de la mesa, no con una lista genérica de servicios. Si querés ver el detalle, está en la página de precios.',
-            en: 'AI Partner plans start at USD 250 per month for that first scope, continue at USD 500 when there is more than one flow or a team to train and reach USD 900 when several departments need support. They are not a long contract. The free assessment exists to choose the plan with the process on the table, not with a generic service list. The detail is on the pricing page.',
+            es: 'Los planes de AI Partner son Básico a USD 250 al mes (un agente de atención por WhatsApp), Crecimiento a USD 500 (dos agentes, con cotizaciones y seguimiento) y Pro a USD 900 (hasta cuatro agentes, con facturación, inventario e integración). La implementación está incluida y no hay contrato de permanencia. El detalle está en la página de precios.',
+            en: 'AI Partner plans are Basic at USD 250 per month (one WhatsApp service agent), Growth at USD 500 (two agents, with quotes and follow-up) and Pro at USD 900 (up to four agents, with invoicing, inventory and integration). Implementation is included and there is no lock-in contract. The detail is on the pricing page.',
           },
         ],
       },
@@ -102,8 +102,8 @@ export const blogPostsA: BlogPost[] = [
             en: 'An SMB does not need a digital-transformation speech. It needs the 9 p.m. message not to sit unanswered until the next day, or the report not to depend on whoever remembers the format. Those goals can be observed: was the data recorded, did the reply come from the approved text, did a person see the exception? If the goal is “to be an AI company”, there is no way to know whether the month helped.',
           },
           {
-            es: 'Tampoco conviene copiar el stack de una empresa de otro país solo porque apareció en un video. En Santa Cruz el cliente escribe por WhatsApp, la factura puede vivir en un sistema local y el equipo es chico. La implementación útil respeta eso. Si después de leer esta guía querés bajarlo a tu operación, el diagnóstico gratuito es una conversación de unos veinte minutos, sin compromiso de contratar.',
-            en: 'It is also unwise to copy another country’s stack just because it appeared in a video. In Santa Cruz the customer writes on WhatsApp, the invoice may live in a local system and the team is small. A useful implementation respects that. If after this guide you want to bring it down to your operation, the free assessment is a conversation of about twenty minutes, with no obligation to hire.',
+            es: 'Tampoco conviene copiar el stack de una empresa de otro país solo porque apareció en un video. En Santa Cruz el cliente escribe por WhatsApp, la factura puede vivir en un sistema local y el equipo es chico. La implementación útil respeta eso. Si después de leer esta guía querés verlo en tu operación, escribinos por WhatsApp. Te mostramos cómo funcionaría, sin compromiso.',
+            en: 'It is also unwise to copy another country’s stack just because it appeared in a video. In Santa Cruz the customer writes on WhatsApp, the invoice may live in a local system and the team is small. A useful implementation respects that. If after this guide you want to see it in your operation, message us on WhatsApp. We show you how it would work, with no obligation.',
           },
         ],
       },
@@ -125,8 +125,8 @@ export const blogPostsA: BlogPost[] = [
       {
         paragraphs: [
           {
-            es: 'La primera pregunta que aparece en un diagnóstico suele ser si conviene ChatGPT o Claude. La respuesta honesta es que depende de la tarea, no de cuál marca esté más de moda ese mes. Las dos sirven para redactar, resumir y razonar sobre texto. Se diferencian en el estilo de la respuesta, en cómo manejan documentos largos, en el ecosistema de conexiones y en las cuentas que tu equipo ya tiene abiertas.',
-            en: 'The first question in an assessment is often whether to choose ChatGPT or Claude. The honest answer is that it depends on the task, not on which brand is more fashionable that month. Both are good at drafting, summarizing and reasoning over text. They differ in the style of the reply, how they handle long documents, the ecosystem of connections and the accounts your team already has open.',
+            es: 'Una pregunta frecuente es si conviene una marca u otra de modelo. La respuesta honesta es que depende de la tarea, no de cuál marca esté más de moda ese mes. Las dos sirven para redactar, resumir y razonar sobre texto. Se diferencian en el estilo de la respuesta, en cómo manejan documentos largos, en el ecosistema de conexiones y en las cuentas que tu equipo ya tiene abiertas.',
+            en: 'A frequent question is whether one model brand or another is better. The honest answer is that it depends on the task, not on which brand is more fashionable that month. Both are good at drafting, summarizing and reasoning over text. They differ in the style of the reply, how they handle long documents, the ecosystem of connections and the accounts your team already has open.',
           },
           {
             es: 'Esta guía no es una tabla de puntajes ni una recomendación única para toda Bolivia. Es una forma de decidir con el trabajo real delante: correos, propuestas, manuales, atención por WhatsApp y análisis de archivos. Al final, muchas empresas terminan con las dos herramientas, cada una en un rol, en lugar de pelear una guerra interna.',
@@ -172,8 +172,8 @@ export const blogPostsA: BlogPost[] = [
             en: 'The second criterion is the data that must not leave the company. Before debating models, define what is never pasted: customer lists, salaries, clinical histories, credentials. Both tools have team and privacy options that need a careful read. One afternoon of training prevents more incidents than switching vendors every quarter.',
           },
           {
-            es: 'El tercer criterio es el costo total, no solo la suscripción. USD 20 o USD 25 por persona se ven chicos al lado de las horas del equipo. El plan de acompañamiento —desde USD 250 al mes si incluye ordenar el uso y un primer flujo— existe porque la licencia sola no deja una forma de trabajo. En la página de precios está la diferencia entre Emprendedor, Profesional y Empresarial.',
-            en: 'The third criterion is total cost, not only the subscription. USD 20 or USD 25 per person looks small next to the team’s hours. The support plan —from USD 250 per month when it includes organizing the use and a first flow— exists because the license alone does not leave a way of working. The pricing page shows the difference between Starter, Professional and Business.',
+            es: 'El tercer criterio es el costo total, no solo la suscripción. USD 20 o USD 25 por persona se ven chicos al lado de las horas del equipo. La suscripción —desde USD 250 al mes, con la implementación incluida— existe porque una licencia sola no deja el agente funcionando. En la página de precios está la diferencia entre Básico, Crecimiento y Pro.',
+            en: 'The third criterion is total cost, not only the subscription. USD 20 or USD 25 per person looks small next to the team’s hours. The subscription —from USD 250 per month, with implementation included— exists because a license alone does not leave the agent running. The pricing page shows the difference between Basic, Growth and Pro.',
           },
         ],
       },
@@ -189,8 +189,8 @@ export const blogPostsA: BlogPost[] = [
             en: 'For example, an accounting firm could keep ChatGPT to explain spreadsheet differences to a client in plain language, and Claude for a first reading of a services contract. Someone at the firm would still sign off on any number. The example shows a possible split. It is not a client setup or a closed recommendation for every industry.',
           },
           {
-            es: 'Si querés que miremos tus tres tareas juntos, pedí el diagnóstico gratuito. En esa conversación se ve si alcanza con capacitación, si hace falta un agente o si el siguiente paso es otro. No hace falta llegar con la marca elegida.',
-            en: 'If you want us to look at your three tasks together, request the free assessment. That conversation shows whether training is enough, whether an agent is needed or whether the next step is something else. You do not have to arrive with the brand already chosen.',
+            es: 'Si querés ver cómo quedaría en tu negocio, escribinos por WhatsApp. En esa conversación vemos qué agente te sirve y qué plan encaja. No hace falta llegar con una herramienta elegida.',
+            en: 'If you want to see how it would look in your business, message us on WhatsApp. In that conversation we see which agent you need and which plan fits. You do not have to arrive with a tool already chosen.',
           },
           {
             es: 'Una decisión que se puede revisar en treinta días es mejor que una migración anunciada con entusiasmo. Dejá escrito qué tarea se hace en cada herramienta, quién actualiza los prompts y qué señal indicaría que hay que cambiar el reparto. Con eso el equipo no vuelve a discutir de cero cada vez que sale un modelo nuevo.',
@@ -220,8 +220,8 @@ export const blogPostsA: BlogPost[] = [
             en: 'People often ask for “success stories” before automating. The problem is that someone else’s story, with another volume and another system, turns into a disguised promise. This note has five illustrative scenarios. Each one starts with “for example” because they are not AI Partner clients or measured results. They help you recognize the kind of flow, not calculate a saving we have not looked at in your company.',
           },
           {
-            es: 'En los cinco se repite la misma regla: primero se quita el paso que sobra, después se automatiza lo que queda y una persona sigue viendo las excepciones. Las herramientas típicas son n8n, Make o Zapier, con un modelo de lenguaje solo donde hay texto libre. El detalle de implementación está en la página de automatización de procesos.',
-            en: 'All five repeat the same rule: first remove the step that should not exist, then automate what remains and a person still sees the exceptions. Typical tools are n8n, Make or Zapier, with a language model only where there is free text. Implementation detail is on the process automation page.',
+            es: 'En los cinco se repite la misma regla: primero se quita el paso que sobra, después se automatiza lo que queda y una persona sigue viendo las excepciones. Las herramientas típicas son n8n, Make o Zapier, con un modelo de lenguaje solo donde hay texto libre. Dejar ese agente funcionando entra en la suscripción. El detalle está en la página de agente de IA para WhatsApp.',
+            en: 'All five repeat the same rule: first remove the step that should not exist, then automate what remains and a person still sees the exceptions. Typical tools are n8n, Make or Zapier, with a language model only where there is free text. Getting that agent working is part of the subscription. The detail is on the WhatsApp AI agent page.',
           },
         ],
       },
@@ -285,12 +285,12 @@ export const blogPostsA: BlogPost[] = [
             en: 'For example, an agency that publishes on Friday could let an assistant ask about sale or rent, area, range and availability to visit, and offer blocks the office already opened. The agent would receive a summary, not a chat that starts with “info”. Price and availability would come from the listing. If the listing is stale, the assistant does not guess: it says an agent will confirm.',
           },
           {
-            es: 'Los cinco escenarios se pueden empezar de a uno. El plan Emprendedor, USD 250 al mes, está pensado para el primero bien hecho. USD 500 y USD 900 entran cuando hay más flujos o más personas que capacitar. Si uno de estos ejemplos se parece a tu semana, el diagnóstico gratuito sirve para bajarlo a tus herramientas reales, sin convertir el ejemplo en una promesa.',
-            en: 'The five scenarios can be started one at a time. The Starter plan, USD 250 per month, is meant for the first one done properly. USD 500 and USD 900 come in when there are more flows or more people to train. If one of these examples looks like your week, the free assessment is how to bring it down to your real tools, without turning the example into a promise.',
+            es: 'Los cinco escenarios se pueden empezar de a uno. El plan Básico, USD 250 al mes, es un agente de atención. Crecimiento (USD 500) y Pro (USD 900) suman cotizaciones, seguimiento y, en Pro, facturación, inventario e integración. Si uno de estos ejemplos se parece a tu semana, escribinos por WhatsApp para bajarlo a tu operación, sin convertir el ejemplo en una promesa.',
+            en: 'The five scenarios can be started one at a time. The Basic plan, USD 250 per month, is one service agent. Growth (USD 500) and Pro (USD 900) add quotes, follow-up and, on Pro, invoicing, inventory and integration. If one of these examples looks like your week, message us on WhatsApp to bring it down to your operation, without turning the example into a promise.',
           },
           {
-            es: 'Antes de elegir cuál de los cinco se parece más a tu operación, anotá durante una semana qué tarea se repitió, quién la hizo y qué sistema tocó. Ese inventario chico evita automatizar el proceso que duele en la reunión y no el que duele el martes a las once. Con esa nota encima de la mesa, la conversación del diagnóstico gratuito dura menos y el alcance del plan queda más claro.',
-            en: 'Before choosing which of the five looks most like your operation, note for one week which task repeated, who did it and which system it touched. That small inventory keeps you from automating the process that hurts in the meeting instead of the one that hurts on Tuesday at eleven. With that note on the table, the free assessment is shorter and the plan scope is clearer.',
+            es: 'Antes de elegir cuál de los cinco se parece más a tu operación, anotá durante una semana qué tarea se repitió, quién la hizo y qué sistema tocó. Ese inventario chico evita automatizar el proceso que duele en la reunión y no el que duele el martes a las once. Con esa nota encima de la mesa, la conversación por WhatsApp es más corta y el plan queda más claro.',
+            en: 'Before choosing which of the five looks most like your operation, note for one week which task repeated, who did it and which system it touched. That small inventory keeps you from automating the process that hurts in the meeting instead of the one that hurts on Tuesday at eleven. With that note on the table, the WhatsApp conversation is shorter and the plan is clearer.',
           },
         ],
       },

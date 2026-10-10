@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: '%s',
   },
   description:
-    'Implementamos inteligencia artificial en tu empresa: agentes de IA para WhatsApp, automatización de procesos con n8n y Make, ChatGPT/Claude y capacitación. Diagnóstico gratuito. Planes desde USD 250/mes.',
+    'Agentes de IA que atienden tu WhatsApp, cotizan, agendan y hacen seguimiento por vos. Suscripción mensual desde USD 250, implementación incluida. Para pymes de Santa Cruz.',
   applicationName: siteConfig.name,
   authors: [{name: siteConfig.founderName, url: siteConfig.linkedinUrl}],
   creator: siteConfig.founderName,
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
         url: siteConfig.ogImagePath,
         width: 1200,
         height: 630,
-        alt: 'AI Partner — consultoría de IA en Santa Cruz, Bolivia',
+        alt: 'AI Partner — software de agentes de IA para pymes en Santa Cruz',
       },
     ],
   },

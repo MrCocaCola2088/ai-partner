@@ -1,78 +1,80 @@
 import type {Metadata} from 'next';
+import {subscriptionPlans} from '@/lib/plans';
 import {absoluteUrl, siteConfig} from '@/lib/site';
 
 export const homeTitle =
-  'Consultoría de IA y Automatización en Santa Cruz, Bolivia | AI Partner';
+  'AI Partner | Agentes de IA para pymes en Santa Cruz — software por suscripción';
 
 export const routeSeo = {
   home: {
     es: {
       title: homeTitle,
       description:
-        'Implementamos IA en tu empresa: agentes para WhatsApp, automatización y capacitación. Diagnóstico gratuito. Desde USD 250/mes.',
-      ogTitle: 'AI Partner | Consultoría de IA en Santa Cruz, Bolivia',
+        'Agentes de IA que atienden tu WhatsApp, cotizan, agendan y hacen seguimiento por vos. Suscripción mensual desde USD 250, implementación incluida. Para pymes de Santa Cruz.',
+      ogTitle: 'AI Partner | Agentes de IA para pymes en Santa Cruz — software por suscripción',
       ogDescription:
-        'Agentes de IA para WhatsApp, automatización de procesos y capacitación. Resultados en 2–4 semanas. Diagnóstico gratuito.',
-      twitterTitle: 'AI Partner | Consultoría de IA en Santa Cruz, Bolivia',
-      twitterDescription: 'Agentes de IA para WhatsApp, automatización y capacitación. Diagnóstico gratuito.',
+        'Una suscripción mensual. Implementación incluida. Agentes de WhatsApp para pymes de Santa Cruz, desde USD 250.',
+      twitterTitle: 'AI Partner | Agentes de IA para pymes en Santa Cruz',
+      twitterDescription:
+        'Software de agentes de IA por suscripción mensual, con implementación incluida. Desde USD 250.',
     },
     en: {
-      title: 'AI Consulting and Automation in Santa Cruz, Bolivia | AI Partner',
+      title: 'AI Partner | AI agents for small businesses in Santa Cruz — subscription software',
       description:
-        'We implement AI in your company: WhatsApp agents, automation and training. Free assessment. Plans from USD 250/month.',
-      ogTitle: 'AI Partner | AI Consulting in Santa Cruz, Bolivia',
+        'AI agents that answer your WhatsApp, send quotes, book appointments and follow up on sales. Monthly subscription from USD 250, implementation included. For small businesses in Santa Cruz.',
+      ogTitle: 'AI Partner | AI agents for small businesses in Santa Cruz — subscription software',
       ogDescription:
-        'AI agents for WhatsApp, process automation and training. Free assessment. Plans from USD 250/month.',
-      twitterTitle: 'AI Partner | AI Consulting in Santa Cruz, Bolivia',
-      twitterDescription: 'WhatsApp AI agents, automation and training. Free assessment.',
+        'One monthly subscription. Implementation included. WhatsApp agents for small businesses in Santa Cruz, from USD 250.',
+      twitterTitle: 'AI Partner | AI agents for small businesses in Santa Cruz',
+      twitterDescription: 'Subscription software for AI agents, with implementation included. From USD 250.',
     },
   },
   precios: {
     es: {
-      title: 'Precios de Consultoría en IA: desde USD 250/mes | AI Partner',
+      title: 'Planes y precios: USD 250, 500 y 900 al mes | AI Partner',
       description:
-        'Planes Emprendedor, Profesional y Empresarial. Sin contratos largos. Implementación de flujos de IA, capacitación y soporte.',
+        'Básico, Crecimiento y Pro. Suscripción mensual con implementación incluida. Se factura en bolivianos al tipo de cambio del día.',
     },
     en: {
-      title: 'AI Consulting Prices: from USD 250/month | AI Partner',
+      title: 'Plans and prices: USD 250, 500 and 900 per month | AI Partner',
       description:
-        'Starter, Professional and Business plans. No long contracts. AI workflows, training and support.',
+        'Basic, Growth and Pro. Monthly subscription with implementation included. Billed in bolivianos at the day’s exchange rate.',
     },
   },
   tecnologias: {
     es: {
-      title: 'Herramientas de IA que implementamos: ChatGPT, Claude, n8n | AI Partner',
+      title: 'Funciona sobre WhatsApp Business | AI Partner',
       description:
-        'OpenAI, Claude, Gemini, Copilot, n8n, Make, Zapier, Power BI y más, integrados a tus sistemas actuales.',
+        'Los agentes de AI Partner atienden por WhatsApp Business. En el plan Pro se conectan con el sistema que ya usás.',
     },
     en: {
-      title: 'AI Tools We Implement: ChatGPT, Claude, n8n | AI Partner',
+      title: 'Runs on WhatsApp Business | AI Partner',
       description:
-        'OpenAI, Claude, Gemini, Copilot, n8n, Make, Zapier, Power BI and more, connected to the systems you already use.',
+        'AI Partner agents work on WhatsApp Business. The Pro plan connects them to the system you already use.',
     },
   },
   blog: {
     es: {
-      title: 'Blog de IA para Empresas en Bolivia | AI Partner',
+      title: 'Blog de agentes de IA para pymes | AI Partner',
       description:
-        'Guías, casos y comparativas para aplicar inteligencia artificial en PyMEs de Bolivia y Latinoamérica.',
+        'Notas para pymes de Santa Cruz que quieren un agente de WhatsApp por suscripción, con implementación incluida.',
     },
     en: {
-      title: 'AI Blog for Businesses in Bolivia | AI Partner',
+      title: 'Blog: AI agents for small businesses | AI Partner',
       description:
-        'Guides and comparisons for applying artificial intelligence in SMBs across Bolivia and Latin America.',
+        'Notes for small businesses in Santa Cruz that want a WhatsApp agent on a monthly subscription, with implementation included.',
     },
   },
   diagnostico: {
     es: {
-      title: 'Diagnóstico Gratuito de IA para tu Empresa | AI Partner',
+      title: 'Quiero mi agente de WhatsApp | AI Partner',
       description:
-        'En 20 minutos identificamos qué procesos de tu empresa se pueden automatizar con IA y cuánto podrías ahorrar.',
+        'Escribinos y te mostramos cómo funcionaría un agente de IA en tu negocio. Suscripción mensual, implementación incluida.',
     },
     en: {
-      title: 'Free AI Assessment for Your Company | AI Partner',
+      title: 'I want my WhatsApp agent | AI Partner',
       description:
-        'In 20 minutes we identify which processes can be automated with AI and where time is being lost.',
+        'Message us and we will show you how an AI agent would work in your business. Monthly subscription, implementation included.',
     },
   },
 } as const;
@@ -112,7 +114,7 @@ export function pageMetadata(locale: string, path: string, copy: SeoCopy): Metad
       siteName: siteConfig.name,
       title: ogTitle,
       description: ogDescription,
-      images: [{url: image, width: 1200, height: 630, alt: 'AI Partner — consultoría de IA en Santa Cruz, Bolivia'}],
+      images: [{url: image, width: 1200, height: 630, alt: 'AI Partner — software de agentes de IA para pymes en Santa Cruz'}],
     },
     twitter: {
       card: 'summary_large_image',
@@ -127,11 +129,13 @@ export function pageMetadata(locale: string, path: string, copy: SeoCopy): Metad
 export function businessJsonLd() {
   return {
     '@context': 'https://schema.org',
-    '@type': 'ProfessionalService',
+    '@type': 'SoftwareApplication',
     '@id': `${siteConfig.siteUrl}/#business`,
     name: 'AI Partner',
+    applicationCategory: 'BusinessApplication',
+    operatingSystem: 'Web',
     description:
-      'Consultoría e implementación de inteligencia artificial para empresas: agentes de IA, automatización de procesos, configuración de ChatGPT/Claude, capacitación y QA de sistemas de IA.',
+      'Software de agentes de IA para pymes. Suscripción mensual con implementación incluida: atención por WhatsApp, cotizaciones, seguimiento, facturación e inventario.',
     url: `${siteConfig.siteUrl}/`,
     image: `${siteConfig.siteUrl}${siteConfig.ogImagePath}`,
     telephone: siteConfig.phone,
@@ -143,22 +147,19 @@ export function businessJsonLd() {
       addressRegion: 'Santa Cruz',
       addressCountry: 'BO',
     },
-    areaServed: {'@type': 'Country', name: 'Bolivia'},
+    areaServed: {'@type': 'City', name: 'Santa Cruz de la Sierra'},
     founder: {
       '@type': 'Person',
       name: siteConfig.founderName,
       sameAs: siteConfig.linkedinUrl,
     },
     sameAs: [siteConfig.linkedinUrl, siteConfig.instagramUrl],
-    hasOfferCatalog: {
-      '@type': 'OfferCatalog',
-      name: 'Planes de implementación de IA',
-      itemListElement: [
-        {'@type': 'Offer', name: 'Emprendedor', price: '250', priceCurrency: 'USD'},
-        {'@type': 'Offer', name: 'Profesional', price: '500', priceCurrency: 'USD'},
-        {'@type': 'Offer', name: 'Empresarial', price: '900', priceCurrency: 'USD'},
-      ],
-    },
+    offers: subscriptionPlans.map((plan) => ({
+      '@type': 'Offer',
+      name: plan.name.es,
+      price: String(plan.priceUsd),
+      priceCurrency: 'USD',
+    })),
   };
 }
 

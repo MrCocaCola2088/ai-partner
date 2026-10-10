@@ -14,7 +14,7 @@ export default function NotFound() {
         <p className="text-sm uppercase tracking-[0.3em] text-cyan-200">404</p>
         <h1 className="mt-4 text-4xl font-semibold text-white">Página no encontrada</h1>
         <p className="mt-4 text-base leading-7 text-slate-300">
-          Esa dirección no existe en AI Partner. Podés volver al inicio, ver los planes o pedir un diagnóstico gratuito.
+          Esa dirección no existe en AI Partner. Podés volver al inicio o ver los planes y precios.
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Button asChild>
@@ -24,7 +24,7 @@ export default function NotFound() {
           </Button>
           <Button variant="secondary" asChild>
             {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-            <a href="/diagnostico">Diagnóstico gratuito</a>
+            <a href="/precios">Ver planes y precios</a>
           </Button>
         </div>
       </div>

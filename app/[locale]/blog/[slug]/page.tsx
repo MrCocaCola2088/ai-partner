@@ -68,15 +68,16 @@ export default async function BlogArticlePage({
       <p className="mt-10 text-base leading-8 text-slate-600 dark:text-slate-300">
         {lang === 'es' ? (
           <>
-            Los planes publicados están en <Link className="text-cyan-200 underline" href="/precios">precios</Link>, desde USD
-            250 al mes. Si querés bajar esto a tu operación, pedí el{' '}
-            <Link className="text-cyan-200 underline" href="/diagnostico">diagnóstico gratuito</Link>.
+            Los planes publicados están en <Link className="text-cyan-200 underline" href="/precios">precios</Link>: Básico
+            USD 250, Crecimiento USD 500 y Pro USD 900 al mes, con implementación incluida. Si querés verlo en tu negocio,
+            escribinos por{' '}
+            <a className="text-cyan-200 underline" href="https://wa.me/59177056858">WhatsApp</a>.
           </>
         ) : (
           <>
-            Published plans are on <Link className="text-cyan-200 underline" href="/precios">pricing</Link>, from USD 250 per
-            month. To bring this down to your operation, request the{' '}
-            <Link className="text-cyan-200 underline" href="/diagnostico">free assessment</Link>.
+            Published plans are on <Link className="text-cyan-200 underline" href="/precios">pricing</Link>: Basic USD 250,
+            Growth USD 500 and Pro USD 900 per month, with implementation included. To see it in your business, message us
+            on <a className="text-cyan-200 underline" href="https://wa.me/59177056858">WhatsApp</a>.
           </>
         )}
       </p>

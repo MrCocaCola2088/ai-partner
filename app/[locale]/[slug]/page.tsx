@@ -3,7 +3,7 @@ import {notFound} from 'next/navigation';
 import {setRequestLocale} from 'next-intl/server';
 import {ConversionCta} from '@/components/conversion-cta';
 import {FaqList} from '@/components/faq-list';
-import {PlanCards} from '@/components/plan-cards';
+import {PricingTable} from '@/components/pricing-table';
 import {ProseParagraphs, ProseSections} from '@/components/prose';
 import {Badge} from '@/components/ui/badge';
 import {routing} from '@/i18n/routing';
@@ -65,11 +65,11 @@ export default async function LandingRoute({
         </h2>
         <p className="mt-4 max-w-3xl text-base leading-8 text-slate-600 dark:text-slate-300">
           {lang === 'es'
-            ? 'Emprendedor USD 250 al mes, Profesional USD 500 y Empresarial USD 900. El diagnóstico gratuito elige el plan; no hay contrato largo.'
-            : 'Starter is USD 250 per month, Professional USD 500 and Business USD 900. The free assessment chooses the plan; there is no long contract.'}
+            ? 'Básico USD 250 al mes, Crecimiento USD 500 y Pro USD 900. La implementación está incluida y no hay contrato de permanencia. Los precios se facturan en bolivianos al tipo de cambio del día.'
+            : 'Basic is USD 250 per month, Growth USD 500 and Pro USD 900. Implementation is included and there is no lock-in contract. Prices are billed in bolivianos at the day’s exchange rate.'}
         </p>
         <div className="mt-6">
-          <PlanCards locale={locale} linked />
+          <PricingTable locale={locale} />
         </div>
       </section>
       <section className="mt-12 grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">

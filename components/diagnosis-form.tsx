@@ -10,7 +10,7 @@ const copy = {
     company: 'Empresa',
     phone: 'Celular',
     email: 'Correo',
-    process: 'Proceso que querés mejorar',
+    process: 'Qué necesitás que haga el agente',
     submit: 'Enviar por WhatsApp',
     note: 'El formulario abre WhatsApp con tu mensaje. También podés escribir a',
     success: 'Se abrió WhatsApp con tu consulta. Si no lo ves, revisá el bloqueador de ventanas.',
@@ -20,7 +20,7 @@ const copy = {
     company: 'Company',
     phone: 'Mobile',
     email: 'Email',
-    process: 'Process you want to improve',
+    process: 'What you need the agent to do',
     submit: 'Send via WhatsApp',
     note: 'The form opens WhatsApp with your message. You can also email',
     success: 'WhatsApp opened with your inquiry. If you do not see it, check the pop-up blocker.',
@@ -35,7 +35,7 @@ export function DiagnosisForm({locale}: {locale: string}) {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     const lines = [
-      locale === 'en' ? 'Hello, I want a free AI assessment.' : 'Hola, quiero un diagnóstico gratuito de IA.',
+      locale === 'en' ? 'Hi, I want my WhatsApp agent.' : 'Hola, quiero mi agente de WhatsApp.',
       `${t.name}: ${String(data.get('name') ?? '')}`,
       `${t.company}: ${String(data.get('company') ?? '')}`,
       `${t.phone}: ${String(data.get('phone') ?? '')}`,

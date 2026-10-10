@@ -13,14 +13,14 @@ export default function LocaleNotFound() {
       <p className="text-sm uppercase tracking-[0.3em] text-cyan-200">404</p>
       <h1 className="mt-4 text-4xl font-semibold text-slate-950 dark:text-white">Página no encontrada</h1>
       <p className="mt-4 max-w-xl text-base leading-7 text-slate-600 dark:text-slate-300">
-        No encontramos esa página. Revisá el enlace o volvé al inicio para ver servicios, precios y el diagnóstico gratuito.
+        No encontramos esa página. Revisá el enlace o volvé al inicio para ver los agentes y los planes.
       </p>
       <div className="mt-8 flex flex-col gap-3 sm:flex-row">
         <Button asChild>
           <Link href="/">Volver al inicio</Link>
         </Button>
         <Button variant="secondary" asChild>
-          <Link href="/diagnostico">Diagnóstico gratuito</Link>
+          <Link href="/precios">Ver planes y precios</Link>
         </Button>
       </div>
     </main>
